@@ -77,11 +77,7 @@ header {
 /* MEDIUM */
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
-  }
-
-  section {
-    margin-top: 6rem;
+    height: 100vh;
   }
 }
 /* SMALL */

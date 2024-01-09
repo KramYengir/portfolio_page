@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 30% 65%;
   gap: 15%;
+  margin-bottom: 2rem;
+  height: auto;
 }
 
 .about__me {
