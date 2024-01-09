@@ -6,56 +6,47 @@ header {
 
 .header__container {
   text-align: center;
-  height: 100%;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  /*  flex-direction: column;
+  align-items: center; */
 }
 
 /* ======== CTA ======== */
 .cta {
-  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   gap: 1.2rem;
+  margin-top: 2.5rem;
 }
 
 /* ======== SOCIALS ======== */
 .header__socials {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
+  justify-content: center;
+  margin-top: 2.5rem;
 
-  position: absolute;
+  gap: 1rem;
+
+  /* position: absolute;
   left: 0;
-  bottom: 4rem;
+  bottom: 4rem; */
 
   font-size: 2rem;
-}
-
-.header__socials::before {
-  content: "";
-  width: 1px;
-  height: 2rem;
-  background-color: var(--color-primary);
-}
-.header__socials::after {
-  content: "";
-  width: 1px;
-  height: 2rem;
-  background-color: var(--color-primary);
 }
 
 /* ======== IMAGE ======== */
 .me {
   width: 22rem;
   height: 30rem;
-  position: absolute;
+  /* position: absolute;
   left: calc(50% - 11rem);
-  bottom: 4rem;
+  bottom: 4rem; */
 
   overflow: hidden;
-  margin-top: 4rem;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  margin: 2rem auto 0;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .me img {
@@ -84,11 +75,5 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
-  }
-
-  /* make sure to display these somehwre else */
-  .header__socials,
-  .scroll__down {
-    display: none;
   }
 }
