@@ -1,7 +1,7 @@
 import "./services.css";
 
 const Services = () => {
-  return <div>services</div>;
+  return <section id="services">services</section>;
 };
 
 export default Services;
