@@ -40,6 +40,7 @@
   color: var(--color-bg);
   font-size: 1rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .service .service__list {

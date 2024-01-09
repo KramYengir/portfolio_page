@@ -107,4 +107,13 @@
     width: 80%;
     margin-inline: auto;
   }
+
+  .about__card {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 1rem;
+    text-align: left;
+  }
 }

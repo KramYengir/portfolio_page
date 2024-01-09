@@ -17,20 +17,26 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <IoSchoolSharp className="about__icon" />
-              <h5>Education</h5>
-              <small>B.Sc (Hons) Software Development</small>
-              <br />
-              <small>B.Eng Computer Engineering</small>
+              <div>
+                <h5>Education</h5>
+                <small>B.Sc (Hons) Software Development</small>
+                <br />
+                <small>B.Eng Computer Engineering</small>
+              </div>
             </article>
             <article className="about__card">
               <FaCamera className="about__icon" />
-              <h5>Hobby</h5>
-              <small>15+ Years Photography Experience</small>
+              <div>
+                <h5>Hobby</h5>
+                <small>15+ Years Photography Experience</small>
+              </div>
             </article>
             <article className="about__card">
               <MdLanguage className="about__icon" />
-              <h5>Other Experience</h5>
-              <small>Certified TEFL Teacher</small>
+              <div>
+                <h5>Other Experience</h5>
+                <small>Certified TEFL Teacher</small>
+              </div>
             </article>
           </div>
           <p>

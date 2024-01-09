@@ -54,6 +54,14 @@ const Services = () => {
               <FaCheckCircle className={"service__icon"} />
               <p>Lorem ipsum dolor sit amet.</p>
             </li>
+            <li>
+              <FaCheckCircle className={"service__icon"} />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li>
+              <FaCheckCircle className={"service__icon"} />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </li>
           </ul>
         </article>
 
