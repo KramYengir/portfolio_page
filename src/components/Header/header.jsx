@@ -1,3 +1,4 @@
+import { FaArrowDown } from "react-icons/fa";
 import CTA from "./CTA";
 import HeaderSocials from "./headerSocials";
 import "./header.css";
@@ -16,7 +17,7 @@ const Header = () => {
           <img src={myImg} alt="Photo of Creator" />
         </div>
         <a href="#contact" className="scroll__down">
-          Scroll Down
+          <FaArrowDown />
         </a>
       </div>
     </header>
