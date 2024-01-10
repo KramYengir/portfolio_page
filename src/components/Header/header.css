@@ -1,7 +1,6 @@
 header {
-  height: 100vh;
+  height: auto;
   padding-top: 7rem;
-  overflow: hidden;
 }
 
 .header__container {
@@ -54,14 +53,14 @@ header {
 }
 
 /* ======== SCROLL DOWN ======== */
-.scroll__down {
+/* .scroll__down {
   position: absolute;
   right: 0;
   bottom: 5rem;
   font-size: 2rem;
 
   /*  transform: rotate(90deg); */
-}
+} */
 
 /*****  media qeuries ******/
 
@@ -74,6 +73,26 @@ header {
 /* SMALL */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: auto;
+    padding-top: 2rem;
   }
+
+  .me {
+    width: auto;
+    height: auto;
+  }
+
+  .me img {
+    width: 100%;
+    height: auto;
+    padding-inline: 1rem;
+  }
+
+/*   .scroll__down {
+    bottom: 1.5rem;
+  } */
+
+  /* .header__socials {
+    order: 3;
+  } */
 }

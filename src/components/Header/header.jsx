@@ -1,4 +1,3 @@
-import { FaArrowDown } from "react-icons/fa";
 import CTA from "./CTA";
 import HeaderSocials from "./headerSocials";
 import "./header.css";
@@ -16,9 +15,9 @@ const Header = () => {
         <div className="me">
           <img src={myImg} alt="Photo of Creator" />
         </div>
-        <a href="#about" className="scroll__down">
+        {/* <a href="#about" className="scroll__down">
           <FaArrowDown />
-        </a>
+        </a> */}
       </div>
     </header>
   );
