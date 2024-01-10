@@ -1,0 +1,39 @@
+.container.contact__container {
+  height: 100vh;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 0.33fr 0.66fr;
+  gap: 12%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+
+  border: 1px solid transparent;
+  border-radius: 1.2rem;
+
+  text-align: center;
+}
+
+.contact__option:hover {
+  border-color: var(--color-primary-variant);
+}
+
+.contact__option *:nth-child(1) {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.contact__option *:nth-child(2) {
+  font-size: 1.1rem;
+}
+.contact__option *:nth-child(3) {
+  margin-bottom: 0.5rem;
+  color: var(--color-light);
+}
