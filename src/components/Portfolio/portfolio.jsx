@@ -1,5 +1,7 @@
 import "./portfolio.css";
-import IMG1 from "../../assets/me.jpg";
+import IMG1 from "../../assets/FH.jpg";
+import IMG2 from "../../assets/weather.png";
+import IMG3 from "../../assets/library.png";
 
 const Portfolio = () => {
   return (
@@ -11,40 +13,60 @@ const Portfolio = () => {
           <div className="portfolio__image">
             <img src={IMG1} alt="image of project" />
           </div>
-          <h3>Porfolio Item</h3>
+          <h3>Ferryhill Fish & Chips</h3>
           <div className="portfolio__cta">
             <a href="" target="blank" className="btn">
               Github
             </a>
-            <a href="" target="blank" className="btn btn-primary">
+            <a
+              href="https://ferryhillfishandchips.com/"
+              target="blank"
+              className="btn btn-primary"
+            >
               Live Demo
             </a>
           </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__image">
-            <img src={IMG1} alt="image of project" />
+            <img src={IMG2} alt="image of project" />
           </div>
-          <h3>Porfolio Item</h3>
+          <h3>Weather App</h3>
           <div className="portfolio__cta">
-            <a href="" target="blank" className="btn">
+            <a
+              href="https://github.com/KramYengir/weather-app"
+              target="blank"
+              className="btn"
+            >
               Github
             </a>
-            <a href="" target="blank" className="btn btn-primary">
+            <a
+              href="https://kramyengir.github.io/weather-app/"
+              target="blank"
+              className="btn btn-primary"
+            >
               Live Demo
             </a>
           </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__image">
-            <img src={IMG1} alt="image of project" />
+            <img src={IMG3} alt="image of project" />
           </div>
-          <h3>Porfolio Item</h3>
+          <h3>Personal Library App</h3>
           <div className="portfolio__cta">
-            <a href="" target="blank" className="btn">
+            <a
+              href="https://github.com/KramYengir/library-app"
+              target="blank"
+              className="btn"
+            >
               Github
             </a>
-            <a href="" target="blank" className="btn btn-primary">
+            <a
+              href="https://kramyengir.github.io/library-app/"
+              target="blank"
+              className="btn btn-primary"
+            >
               Live Demo
             </a>
           </div>
