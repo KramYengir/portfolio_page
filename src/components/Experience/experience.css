@@ -1,5 +1,7 @@
 .experience__container {
   display: grid;
+  align-items: baseline;
+  /* height: 100vh; */
   cursor: default;
 }
 

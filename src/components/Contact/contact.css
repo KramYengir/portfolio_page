@@ -1,9 +1,8 @@
 .container.contact__container {
-  height: 100vh;
-  width: 60%;
   display: grid;
   grid-template-columns: 0.33fr 0.66fr;
   gap: 12%;
+  width: 60%;
 }
 
 /* ----CONTACT BOXES----*/
