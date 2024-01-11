@@ -58,7 +58,7 @@
   .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    column-gap: 0.5rem;
   }
 
   .experience__content .experience__icon {
