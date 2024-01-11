@@ -15,14 +15,14 @@ const testimonialData = [
   {
     id: 2,
     image: IMG1,
-    name: "Jim Blonkbly",
+    name: "Blim Flamko",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate earum! sit amet consectetur adipisicing elit. Eos, cupiditate earum!",
   },
   {
     id: 3,
     image: IMG1,
-    name: "Jim Blonkbly",
+    name: "Eric Shneckle",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate earum! sit amet consectetur adipisicing elit. Eos, cupiditate earum!",
   },

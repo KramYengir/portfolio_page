@@ -15,9 +15,14 @@ footer a {
 .footer__logo {
   display: inline-block;
   font-size: 2rem;
-  font-weight: 500;
-  color: var(--color-light);
+  font-weight: 600;
 
+  color: var(--color-white);
+  background: rgba(68, 66, 66, 0.137);
+
+  border-radius: 0.5rem;
+
+  padding: 0.5rem 0.7rem;
   margin-bottom: 2rem;
 }
 
