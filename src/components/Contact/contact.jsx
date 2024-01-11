@@ -1,8 +1,32 @@
 import "./contact.css";
 import { CiMail } from "react-icons/ci";
 import { FaFacebookMessenger, FaWhatsapp } from "react-icons/fa";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+// NECESSARY INFO FOR EMAILJS
+const SERVICE_ID = "service_bwawi82";
+const TEMPLATE_ID = "template_6r1d2zd";
+const PUBLIC_KEY = "EUXrEzHA-xr7yeg-1";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+
+    e.target.reset();
+  };
+
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -28,7 +52,7 @@ const Contact = () => {
             <a href="">Send a message</a>
           </article>
         </div>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
@@ -42,7 +66,9 @@ const Contact = () => {
             placeholder="Your message..."
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary"></button>
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
         </form>
       </div>
     </section>
