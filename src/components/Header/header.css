@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  padding-top: 7rem;
+  padding-top: 250px;
 }
 
 .header__container {
@@ -11,23 +11,27 @@ header {
   align-items: center;
 }
 
+header h5 {
+  font-size: 1.2rem;
+}
+
 /* ======== CTA ======== */
 .cta {
   display: flex;
   justify-content: center;
   gap: 1.2rem;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 }
 
 /* ======== SOCIALS ======== */
 .header__socials {
   display: flex;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 
-  gap: 1rem;
+  gap: 2rem;
 
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 /* ======== IMAGE ======== */
@@ -54,6 +58,20 @@ header {
 @media screen and (max-width: 600px) {
   header {
     padding-top: 2.5rem;
+  }
+
+  header h5 {
+    font-size: 1rem;
+  }
+
+  .header__socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    gap: 2rem;
+
+    font-size: 1.8rem;
   }
 
   .me {
