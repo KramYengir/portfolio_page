@@ -1,6 +1,7 @@
 import CTA from "./CTA";
 import HeaderSocials from "./headerSocials";
 import "./header.css";
+import logo from "../../assets/rigneymade-logo-white.svg";
 import myImg from "../../assets/me2.jpg";
 
 const Header = () => {
@@ -8,6 +9,7 @@ const Header = () => {
     <header>
       <div className="container header__container">
         <div className="header__info">
+          <img className="logo" src={logo} alt="" />
           <h5>Hello, I am </h5>
           <h1>Mark Rigney</h1>
           <h5 className="text-light">Frontend Developer</h5>

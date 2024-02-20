@@ -1,4 +1,5 @@
 import "./footer.css";
+import logo from "../../assets/rigneymade-logo.svg";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 
@@ -6,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <a href="#" className="footer__logo">
-        Rigney<span>Made</span>
+        <img src={logo} alt="" />
       </a>
 
       <ul>
