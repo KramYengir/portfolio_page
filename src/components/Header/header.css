@@ -1,5 +1,5 @@
 header {
-  height: auto;
+  min-height: 90vh;
   padding-top: 100px;
 }
 

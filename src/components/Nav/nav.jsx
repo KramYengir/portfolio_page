@@ -10,7 +10,6 @@ const Nav = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Calculate the scroll position and update activeTab
-      // You might need to adjust the logic based on your page structure
       const scrollPosition = window.scrollY;
 
       // Update activeTab based on scroll position
@@ -19,7 +18,6 @@ const Nav = () => {
       // ...
       //console.log(scrollPosition);
 
-      // Example:
       if (scrollPosition < 450) {
         setIsActive("#");
       } else if (scrollPosition > 844 && scrollPosition < 1450) {
@@ -28,7 +26,7 @@ const Nav = () => {
         setIsActive("#experience");
       } else if (scrollPosition > 2500 && scrollPosition < 3400) {
         setIsActive("#services");
-      } else if (scrollPosition > 5880) {
+      } else if (scrollPosition > 5800) {
         setIsActive("#contact");
       }
     };
@@ -45,38 +43,53 @@ const Nav = () => {
     <nav>
       <a
         href="#"
-        className={isActive == "#" ? "active" : ""}
+        className={isActive === "#" ? "active" : ""}
         onClick={() => setIsActive("#")}
       >
-        <IoMdHome />
+        <span className="icon">
+          <IoMdHome />
+        </span>
+        <span className="label">Home</span>
       </a>
       <a
         href="#about"
-        className={isActive == "#about" ? "active" : ""}
+        className={isActive === "#about" ? "active" : ""}
         onClick={() => setIsActive("#about")}
       >
-        <FaInfoCircle />
+        <span className="icon">
+          <FaInfoCircle />
+        </span>
+        <span className="label">About</span>
       </a>
       <a
         href="#experience"
-        className={isActive == "#experience" ? "active" : ""}
+        className={isActive === "#experience" ? "active" : ""}
         onClick={() => setIsActive("#experience")}
       >
-        <FaListAlt />
+        <span className="icon">
+          <FaListAlt />
+        </span>
+        <span className="label">Experience</span>
       </a>
       <a
         href="#services"
-        className={isActive == "#services" ? "active" : ""}
+        className={isActive === "#services" ? "active" : ""}
         onClick={() => setIsActive("#services")}
       >
-        <FaTools />
+        <span className="icon">
+          <FaTools />
+        </span>
+        <span className="label">Services</span>
       </a>
       <a
         href="#contact"
-        className={isActive == "#contact" ? "active" : ""}
+        className={isActive === "#contact" ? "active" : ""}
         onClick={() => setIsActive("#contact")}
       >
-        <AiFillMessage />
+        <span className="icon">
+          <AiFillMessage />
+        </span>
+        <span className="label">Contact</span>
       </a>
     </nav>
   );
