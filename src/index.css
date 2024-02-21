@@ -73,15 +73,16 @@ h5 {
 }
 
 section {
+  min-height: 90vh;
   margin-top: 6rem;
-  height: auto;
+  padding-block: 6.5rem;
 }
 
 section > h2,
 section > h5 {
   text-align: center;
   color: var(--color-light);
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
 
 section > h2 {
@@ -145,6 +146,10 @@ img {
 }
 /* SMALL */
 @media screen and (max-width: 600px) {
+  section {
+    padding-top: 1rem;
+  }
+
   .container {
     width: var(--container-width-sm);
   }

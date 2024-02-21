@@ -16,6 +16,15 @@ const Header = () => {
           <CTA></CTA>
           <HeaderSocials />
         </div>
+        <div className="statement">
+          <h3>Tailored Websites for Your Success</h3>
+          <p>
+            With a strong foundation in web fundamentals, I specialize in
+            crafting bespoke sites that attract customers. Let&apos;s
+            collaborate to elevate your online presence and bring your vision to
+            life.
+          </p>
+        </div>
         <div className="me">
           <img src={myImg} alt="Photo of Creator" />
         </div>

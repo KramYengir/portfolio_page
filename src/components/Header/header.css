@@ -1,14 +1,16 @@
 header {
+  display: flex;
   min-height: 90vh;
-  padding-top: 100px;
 }
 
 .header__container {
-  text-align: center;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-evenly;
+  /* grid-template-columns: 1fr 1fr; */
   align-items: center;
+  text-align: center;
+  padding-top: 4rem;
 }
 
 header .logo {
@@ -39,8 +41,40 @@ header h5 {
   font-size: 2.5rem;
 }
 
+/* ======== STATEMENT ======== */
+header .statement {
+  position: relative;
+  z-index: 10;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  max-width: 50ch;
+  /* isolation: isolate; */
+  padding: 4rem;
+
+  background: var(--color-primary);
+  /* backdrop-filter: blur(2px); */
+  /* text-wrap: balance; */
+}
+
+header .statement h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+header .statement::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: rgb(11, 33, 51);
+  backdrop-filter: blur(2px);
+  border: 2px solid var(--color-primary);
+  transform: skewY(6deg);
+}
+
 /* ======== IMAGE ======== */
 .me {
+  display: none;
   width: 22rem;
   height: 30rem;
 
@@ -68,8 +102,9 @@ header h5 {
 }
 /* SMALL */
 @media screen and (max-width: 600px) {
-  header {
-    padding-top: 2.5rem;
+  .header__container {
+    flex-direction: column;
+    padding-top: 1rem;
   }
 
   header .logo {
@@ -88,6 +123,10 @@ header h5 {
     gap: 2rem;
 
     font-size: 1.8rem;
+  }
+
+  header .statement {
+    margin-top: 4rem;
   }
 
   .me {

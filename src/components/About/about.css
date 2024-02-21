@@ -1,7 +1,3 @@
-#about {
-  background-color: transparent;
-}
-
 .about__container {
   display: grid;
   grid-template-columns: 30% 65%;
