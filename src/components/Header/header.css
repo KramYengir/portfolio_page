@@ -27,7 +27,7 @@ header .change-logo {
 
 header .logo {
   display: block;
-  max-width: 30%;
+  width: 60%;
   margin-bottom: 1rem;
 }
 
@@ -87,11 +87,11 @@ header .statement h2 {
   }
 
   header .logo {
-    max-width: 20%;
+    width: 40%;
     margin-inline: auto;
   }
 
-  header img {
+  header .avatar {
     max-width: 8rem;
     margin-inline: auto;
   }
@@ -122,7 +122,7 @@ header .statement h2 {
   }
 
   header .logo {
-    max-width: 30%;
+    width: 50%;
   }
 
   header .statement {
