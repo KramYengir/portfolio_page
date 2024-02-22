@@ -2,7 +2,6 @@ import CTA from "./CTA";
 import HeaderSocials from "./headerSocials";
 import "./header.css";
 import logo from "../../assets/rigneymade-logo-white.svg";
-import myImg from "../../assets/me2.jpg";
 
 const Header = () => {
   return (
@@ -10,27 +9,30 @@ const Header = () => {
       <div className="container header__container">
         <div className="header__info">
           <img className="logo" src={logo} alt="" />
-          <h5>Hello, I am </h5>
-          <h1>Mark Rigney</h1>
-          <h5 className="text-light">Frontend Developer</h5>
-          <CTA></CTA>
+          <div className="title">
+            <p className="fs-400 text-white">Hello, I am </p>
+            <h1 className="uppercase fs-750 ff-sans text-white">Mark Rigney</h1>
+            <p
+              className="uppercase fs-200 text-accent letter-spacing-3"
+              style={{ "--alpha": "0.95" }}
+            >
+              Frontend Developer
+            </p>
+          </div>
           <HeaderSocials />
         </div>
         <div className="statement">
-          <h3>Tailored Websites for Your Success</h3>
-          <p>
+          <h2 className="uppercase text-accent fs-700 letter-spacing-3">
+            <span>Websites</span> tailored for Your Success
+          </h2>
+          <p className="text-white fs-400">
             With a strong foundation in web fundamentals, I specialize in
             crafting bespoke sites that attract customers. Let&apos;s
             collaborate to elevate your online presence and bring your vision to
             life.
           </p>
+          <CTA></CTA>
         </div>
-        <div className="me">
-          <img src={myImg} alt="Photo of Creator" />
-        </div>
-        {/* <a href="#about" className="scroll__down">
-          <FaArrowDown />
-        </a> */}
       </div>
     </header>
   );
