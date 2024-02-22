@@ -4,6 +4,17 @@ header {
   min-height: 90vh;
 }
 
+header .change-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: aliceblue;
+  background: none;
+  border: 0;
+  aspect-ratio: 1;
+  padding: 0.5em;
+}
+
 .header__container {
   display: flex;
   justify-content: center;
@@ -15,8 +26,16 @@ header {
 }
 
 header .logo {
+  display: block;
   max-width: 30%;
   margin-bottom: 1rem;
+}
+
+header .avatar {
+  max-width: 10rem;
+  border: 0.2rem solid hsl(var(--clr-white));
+  border-radius: 10%;
+  margin-right: auto;
 }
 
 .header__info {
@@ -69,6 +88,11 @@ header .statement h2 {
 
   header .logo {
     max-width: 20%;
+    margin-inline: auto;
+  }
+
+  header img {
+    max-width: 8rem;
     margin-inline: auto;
   }
 
