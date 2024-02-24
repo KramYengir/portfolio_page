@@ -1,13 +1,15 @@
 import "./nav.css";
+import SliderButton from "./sliderButton";
+import { useState, useEffect } from "react";
 import { IoMdHome } from "react-icons/io";
-import { FaInfoCircle, FaListAlt, FaTools } from "react-icons/fa";
+import { FaListAlt, FaTools } from "react-icons/fa";
 import { FaFolderOpen } from "react-icons/fa6";
 import { AiFillMessage } from "react-icons/ai";
 import { IoMdPerson } from "react-icons/io";
-import { useState, useEffect } from "react";
 
 const Nav = () => {
-  const [isActive, setIsActive] = useState("#");
+  const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
+  const [activeLink, setActiveLink] = useState("#");
   // State to track the last scroll position
   const [lastScrollTop, setLastScrollTop] = useState(0);
   // State to track whether the navbar is currently visible or hidden
@@ -74,11 +76,19 @@ const Nav = () => {
   // }, []); // Run the effect only once on mount
 
   return (
-    <nav className={`${isNavbarVisible ? "visible" : "hidden"}`}>
+    <nav
+      className={`${isNavbarVisible ? "visible" : "hidden"} ${
+        !isMobileNavVisible ? "mobile-hidden" : ""
+      }`}
+    >
+      <SliderButton
+        isMobileNavVisible={isMobileNavVisible}
+        setIsMobileNavVisible={setIsMobileNavVisible}
+      />
       <a
         href="#"
-        className={isActive === "#" ? "active" : ""}
-        onClick={() => setIsActive("#")}
+        className={activeLink === "#" ? "active" : ""}
+        onClick={() => setActiveLink("#")}
       >
         <span className="icon">
           <IoMdHome />
@@ -87,8 +97,8 @@ const Nav = () => {
       </a>
       <a
         href="#about"
-        className={isActive === "#about" ? "active" : ""}
-        onClick={() => setIsActive("#about")}
+        className={activeLink === "#about" ? "active" : ""}
+        onClick={() => setActiveLink("#about")}
       >
         <span className="icon">
           <IoMdPerson />
@@ -97,8 +107,8 @@ const Nav = () => {
       </a>
       <a
         href="#experience"
-        className={isActive === "#experience" ? "active" : ""}
-        onClick={() => setIsActive("#experience")}
+        className={activeLink === "#experience" ? "active" : ""}
+        onClick={() => setActiveLink("#experience")}
       >
         <span className="icon">
           <FaListAlt />
@@ -107,8 +117,8 @@ const Nav = () => {
       </a>
       <a
         href="#services"
-        className={isActive === "#services" ? "active" : ""}
-        onClick={() => setIsActive("#services")}
+        className={activeLink === "#services" ? "active" : ""}
+        onClick={() => setActiveLink("#services")}
       >
         <span className="icon">
           <FaTools />
@@ -117,8 +127,8 @@ const Nav = () => {
       </a>
       <a
         href="#portfolio"
-        className={isActive === "#portfolio" ? "active" : ""}
-        onClick={() => setIsActive("#portfolio")}
+        className={activeLink === "#portfolio" ? "active" : ""}
+        onClick={() => setActiveLink("#portfolio")}
       >
         <span className="icon">
           <FaFolderOpen />
@@ -127,8 +137,8 @@ const Nav = () => {
       </a>
       <a
         href="#contact"
-        className={isActive === "#contact" ? "active" : ""}
-        onClick={() => setIsActive("#contact")}
+        className={activeLink === "#contact" ? "active" : ""}
+        onClick={() => setActiveLink("#contact")}
       >
         <span className="icon">
           <AiFillMessage />

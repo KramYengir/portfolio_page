@@ -1,4 +1,5 @@
 nav {
+  position: relative;
   display: flex block;
   gap: 1rem;
   width: max-content;
@@ -17,9 +18,8 @@ nav {
   transition: transform 0.75s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-nav.hidden {
-  transform: translateY(-200%);
-  opacity: 0.25;
+nav .nav-slider {
+  display: none;
 }
 
 nav a {
@@ -51,6 +51,14 @@ nav .icon {
   display: none;
 }
 
+/** nav effects on large screens **/
+@media screen and (min-width: 761px) {
+  nav.hidden {
+    transform: translateY(-200%);
+    opacity: 0.25;
+  }
+}
+
 /* SMALL */
 @media screen and (max-width: 760px) {
   nav {
@@ -60,10 +68,15 @@ nav .icon {
 
     position: fixed;
     z-index: 2222;
-    top: initial;
+    display: grid;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* top: initial;
     bottom: 2rem;
-    right: 50%;
-    transform: translateX(50%);
+    right: 50%; */
+    top: 40%;
+    right: 1rem;
+    /* transform: translateX(50%); */
 
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
@@ -72,11 +85,6 @@ nav .icon {
   }
 
   nav:active {
-    opacity: 1;
-  }
-
-  nav.hidden {
-    transform: translate(50%);
     opacity: 1;
   }
 
@@ -97,5 +105,43 @@ nav .icon {
 
   nav .label {
     display: none;
+  }
+
+  nav .nav-slider {
+    display: grid;
+
+    position: absolute;
+    top: 49%;
+    transform: translateX(-99%);
+
+    padding: 0.75rem 0.5rem;
+    font-size: 1.2rem;
+
+    background: rgba(0, 0, 0, 0.2);
+    color: hsl(var(--clr-white));
+
+    border-radius: 50% 0 0 50%;
+    animation: none;
+  }
+
+  nav.mobile-hidden .nav-slider {
+    animation: flash 5s infinite;
+  }
+
+  nav.mobile-hidden {
+    transform: translateX(100%);
+  }
+}
+
+/* Flashing animation */
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    color: hsl(var(--clr-white));
+  }
+  25%,
+  75% {
+    color: hsl(var(--clr-light));
   }
 }
