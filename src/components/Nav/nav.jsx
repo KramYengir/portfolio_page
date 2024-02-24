@@ -6,6 +6,38 @@ import { useState, useEffect } from "react";
 
 const Nav = () => {
   const [isActive, setIsActive] = useState("#");
+  // State to track the last scroll position
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  // State to track whether the navbar is currently visible or hidden
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+
+  // Effect hook to add scroll event listener and handle navbar visibility
+  useEffect(() => {
+    // Function to handle scroll event
+    const handleScroll = () => {
+      // Get the current scroll position
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      // Calculate the change in scroll position since the last scroll event
+      const delta = scrollTop - lastScrollTop;
+
+      // Check if the absolute value of delta is greater than 100 pixels
+      // or if the current scroll position is less than 100 pixels (indicating that the user is at the top of the page)
+      if (Math.abs(delta) > 100 || scrollTop < 100) {
+        // Threshold: Trigger effect after scrolling 100 pixels or when at the top
+        // Set the visibility of the navbar based on the scroll direction and position
+        setIsNavbarVisible(delta <= 0 || scrollTop < 100);
+        // Update the last scroll position
+        setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+    // Remove scroll event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollTop]); // Dependency array ensures that effect runs only when lastScrollTop changes
 
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -40,7 +72,7 @@ const Nav = () => {
   // }, []); // Run the effect only once on mount
 
   return (
-    <nav>
+    <nav className={`${isNavbarVisible ? "visible" : "hidden"}`}>
       <a
         href="#"
         className={isActive === "#" ? "active" : ""}
