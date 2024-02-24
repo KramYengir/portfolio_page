@@ -32,13 +32,14 @@ const Header = () => {
         </div>
         <div className="statement">
           <h2 className="uppercase text-accent fs-700 letter-spacing-3">
-            <span>Websites</span> tailored for Your Success
+            <span>I create </span>Websites tailored for <br />
+            <span>Your Success</span>
           </h2>
           <p className="text-white fs-400">
             With a strong foundation in web fundamentals, I specialize in
-            crafting bespoke sites that attract customers. Let&apos;s
-            collaborate to elevate your online presence and bring your vision to
-            life.
+            crafting bespoke sites that attract customers and empower small
+            businesses. Let&apos;s collaborate to elevate your online presence
+            and bring your vision to life.
           </p>
           <CTA></CTA>
         </div>

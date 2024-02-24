@@ -27,7 +27,7 @@ header .change-logo {
 
 header .logo {
   width: 60%;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 header .avatar {
@@ -75,6 +75,11 @@ header .statement {
 header .statement h2 {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid hsl(var(--clr-light) / 0.25);
+}
+
+header .statement h2 span {
+  color: hsl(var(--clr-white));
+  font-weight: 700;
 }
 
 /* MEDIUM */
@@ -127,6 +132,6 @@ header .statement h2 {
   header .statement {
     margin-top: 2rem;
     text-align: center;
-    max-width: 30ch;
+    max-width: 35ch;
   }
 }
