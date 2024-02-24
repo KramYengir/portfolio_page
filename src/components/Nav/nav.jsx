@@ -1,7 +1,9 @@
 import "./nav.css";
 import { IoMdHome } from "react-icons/io";
 import { FaInfoCircle, FaListAlt, FaTools } from "react-icons/fa";
+import { FaFolderOpen } from "react-icons/fa6";
 import { AiFillMessage } from "react-icons/ai";
+import { IoMdPerson } from "react-icons/io";
 import { useState, useEffect } from "react";
 
 const Nav = () => {
@@ -89,7 +91,7 @@ const Nav = () => {
         onClick={() => setIsActive("#about")}
       >
         <span className="icon">
-          <FaInfoCircle />
+          <IoMdPerson />
         </span>
         <span className="label">About</span>
       </a>
@@ -112,6 +114,16 @@ const Nav = () => {
           <FaTools />
         </span>
         <span className="label">Services</span>
+      </a>
+      <a
+        href="#portfolio"
+        className={isActive === "#portfolio" ? "active" : ""}
+        onClick={() => setIsActive("#portfolio")}
+      >
+        <span className="icon">
+          <FaFolderOpen />
+        </span>
+        <span className="label">Portfolio</span>
       </a>
       <a
         href="#contact"
