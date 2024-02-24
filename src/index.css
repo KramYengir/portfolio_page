@@ -188,8 +188,12 @@ a {
   transition: all var(--transition);
 }
 
-a:hover {
-  color: hsl(var(--clr-accent));
+a svg {
+  fill: var(--color-primary);
+}
+
+a:hover svg {
+  fill: hsl(var(--clr-light));
 }
 
 /* ------------------- */
@@ -288,14 +292,15 @@ a:hover {
 }
 
 .btn:hover {
-  background: var(--color-white);
+  background: hsl(var(--clr-white));
   color: var(--color-bg);
   border-color: transparent;
 }
 
 .btn-primary {
-  background: var(--color-primary);
+  background: hsl(var(--clr-light));
   color: var(--color-bg);
+  border: 0;
 }
 
 img {

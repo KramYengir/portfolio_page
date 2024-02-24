@@ -11,6 +11,8 @@ nav {
 
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(15px);
+  border-block: 1px solid hsl(var(--clr-light));
+  border-left: 1px solid hsl(var(--clr-light));
   border-radius: 2rem 0 0 2rem;
 }
 
@@ -30,13 +32,13 @@ nav a {
 }
 
 nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
+  color: hsl(var(--clr-light) / 0.95);
 }
 
 nav a.active {
   /* background: var(--color-primary-variant); */
-  color: hsl(var(--clr-accent));
-  border-bottom: 2px solid white;
+  color: hsl(var(--clr-light));
+  /* border-bottom: 2px solid hsl(var(--clr-light)); */
 }
 
 nav .icon {
