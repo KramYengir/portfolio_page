@@ -1,12 +1,12 @@
 nav {
-  position: relative;
+  /* position: relative; */
   display: flex block;
   gap: 1rem;
   width: max-content;
   padding-inline: 2rem 6rem;
 
   position: fixed;
-  z-index: 22;
+  z-index: 222;
   top: 2rem;
   right: 0;
   opacity: 1;
@@ -66,17 +66,15 @@ nav .icon {
     width: max-content;
     padding: 0.5rem 1rem;
 
-    position: fixed;
-    z-index: 2222;
-    display: grid;
+    /* display: grid;
+    flex-direction: column; */
     justify-content: center;
-    /* flex-direction: column; */
-    /* top: initial;
+    top: initial;
     bottom: 2rem;
-    right: 50%; */
-    top: 40%;
-    right: 1rem;
-    /* transform: translateX(50%); */
+    left: 50%;
+    /* top: 50%;
+    right: 1rem;*/
+    transform: translateX(-50%);
 
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
@@ -107,8 +105,8 @@ nav .icon {
     display: none;
   }
 
-  nav .nav-slider {
-    display: grid;
+  /* nav .nav-slider {
+    display: none;
 
     position: absolute;
     top: 49%;
@@ -122,15 +120,15 @@ nav .icon {
 
     border-radius: 50% 0 0 50%;
     animation: none;
-  }
+  } */
 
   nav.mobile-hidden .nav-slider {
     animation: flash 5s infinite;
   }
 
-  nav.mobile-hidden {
-    transform: translateX(100%);
-  }
+  /* nav.mobile-hidden {
+    transform: translateX(100%) translateY(-50%);
+  } */
 }
 
 /* Flashing animation */
