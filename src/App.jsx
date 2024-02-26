@@ -5,7 +5,7 @@ import Services from "./components/Services/services";
 import Portfolio from "./components/Portfolio/portfolio";
 import Testimonials from "./components/Testimonials/testimonials";
 import Nav from "./components/Nav/nav";
-import About from "./components/About/about";
+import About from "./components/About/About";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
 

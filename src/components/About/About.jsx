@@ -1,4 +1,4 @@
-import "./about.css";
+import "./About.css";
 import myImg from "../../assets/me.jpg";
 import { IoSchoolSharp } from "react-icons/io5";
 import { FaCamera } from "react-icons/fa";
@@ -7,48 +7,53 @@ import { MdLanguage } from "react-icons/md";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <p className="sub-heading">Get To Know</p>
+      <h2 className="heading">About Me</h2>
+
       <div className="container about__container">
         <div className="about__me">
           <img src={myImg} alt="Image of page creator" />
         </div>
-        <div className="about__content">
+        <article className="about__content">
           <div className="about__cards">
-            <article className="about__card">
+            <div className="about__card">
               <IoSchoolSharp className="about__icon" />
               <div>
-                <h5>Education</h5>
+                <h3>Education</h3>
                 <small>B.Sc (Hons) Software Development</small>
                 <br />
                 <small>B.Eng Computer Engineering</small>
               </div>
-            </article>
-            <article className="about__card">
+            </div>
+            <div className="about__card">
               <FaCamera className="about__icon" />
               <div>
-                <h5>Hobby</h5>
+                <h3>Hobby</h3>
                 <small>15+ Years Photography Experience</small>
               </div>
-            </article>
-            <article className="about__card">
+            </div>
+            <div className="about__card">
               <MdLanguage className="about__icon" />
               <div>
-                <h5>Other Experience</h5>
+                <h3>Other Experience</h3>
                 <small>Certified TEFL Teacher</small>
               </div>
-            </article>
+            </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
-            repellat qui iure exercitationem! Vel itaque , voluptatem ipsam
-            corporis perferendis soluta velit in. Sapiente quam fuga ipsa et
-            ratione adipisci libero ex vitae, consequuntur quo?
+            With a solid background in Software Development and a habit of
+            crafting designs ranging from logos to full-blown websites for
+            friends and family, I had an epiphany: why not turn my passion into
+            a profession? Therefore, RigneyMade was born—a brand I aspire to
+            make synonymous with quality in every project I undertake. Rooted in
+            simplicity, reliability, and trust, RigneyMade represents my
+            commitment to delivering seamless design and functional excellence
+            in collaboration with my clients.
           </p>
           <a href="#contact" className="btn btn-primary">
             Get In Touch!
           </a>
-        </div>
+        </article>
       </div>
     </section>
   );

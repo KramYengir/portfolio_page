@@ -1,19 +1,24 @@
 .about__container {
   display: grid;
-  grid-template-columns: 30% 65%;
-  gap: 15%;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   margin-bottom: 2rem;
   height: auto;
 }
 
 .about__me {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(60%, 350px);
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(
     45deg,
     transparent,
-    var(--color-primary),
+    hsl(var(--clr-light)),
     transparent
   );
 }
@@ -32,50 +37,52 @@
 /* RIGHT SIDE */
 
 .about__content {
-  margin-block: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 
 .about__card {
-  background: var(--color-bg-variant);
-
+  flex: 1;
   padding: 2rem;
   text-align: center;
+
+  background: hsl(var(--clr-dark) / 0.25);
 
   border: 1px solid transparent;
   border-radius: 1rem;
 }
 
 .about__card:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
+  background: hsl(var(--clr-white) / 0.05);
+  border-color: hsl(var(--clr-light));
   cursor: default;
 }
 
 .about__icon {
-  color: var(--color-primary);
-  font-size: 1.4rem;
+  color: hsl(var(--clr-white));
+  font-size: var(--fs-600);
   margin-bottom: 1rem;
 }
 
-.about__card h5 {
-  font-size: 0.9rem;
+.about__card h3 {
+  font-size: var(--fs-300);
 }
 
 .about__card small {
-  font-size: 0.7rem;
-  color: var(--color-light);
+  font-size: var(--fs-200);
+  color: hsl(var(--clr-white) / 0.75);
 }
 
 .about__content p {
-  font-size: 1.2rem;
+  font-size: var(--fs-400);
   margin: 2rem 0 2.6rem;
-  color: var(--color-light);
+  max-width: min(80%, 70ch);
 }
 
 /*****  media qeuries ******/
@@ -88,18 +95,26 @@
   }
 
   .about__me {
-    width: 35%;
+    width: 25%;
     margin: 2rem auto 4rem;
   }
 
+  .about__cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
   .about__card {
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 1rem;
   }
 
   .about__content {
+    align-items: center;
     text-align: center;
   }
 }
+
 /* SMALL */
 @media screen and (max-width: 600px) {
   .about__me {
@@ -108,8 +123,9 @@
   }
 
   .about__cards {
+    display: grid;
     grid-template-columns: auto;
-    width: 80%;
+    width: 90%;
     margin-inline: auto;
   }
 
@@ -123,6 +139,5 @@
   }
 
   .about__content p {
-    font-size: 1rem;
   }
 }
