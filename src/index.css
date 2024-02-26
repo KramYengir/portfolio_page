@@ -292,7 +292,7 @@ a:hover svg {
 }
 
 .btn-primary {
-  background: hsl(var(--clr-light));
+  background: hsl(var(--clr-light) / 0.75);
   color: var(--color-bg);
   border: 0;
 }

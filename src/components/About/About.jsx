@@ -29,7 +29,10 @@ const About = () => {
               <FaCamera className="about__icon" />
               <div>
                 <h3>Hobby</h3>
-                <small>15+ Years Photography Experience</small>
+                <small>Photography</small>
+                <br />
+
+                <small>Running</small>
               </div>
             </div>
             <div className="about__card">
@@ -37,6 +40,8 @@ const About = () => {
               <div>
                 <h3>Other Experience</h3>
                 <small>Certified TEFL Teacher</small>
+                <br />
+                <small>Figma - Photoshop</small>
               </div>
             </div>
           </div>
