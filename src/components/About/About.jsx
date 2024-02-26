@@ -45,7 +45,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <p>
+          <p className="ff-sans-cond fs-500">
             With a solid background in Software Development and a habit of
             crafting designs ranging from logos to full-blown websites for
             friends and family, I had an epiphany: why not turn my passion into

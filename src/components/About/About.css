@@ -2,7 +2,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.6fr 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
   height: auto;
@@ -39,6 +39,7 @@
 .about__content {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
 }
 
 .about__cards {
@@ -49,7 +50,7 @@
 
 .about__card {
   flex: 1;
-  padding: 2rem;
+  padding: 1rem 2rem;
   text-align: center;
 
   background: hsl(var(--clr-dark) / 0.25);
@@ -80,9 +81,9 @@
 }
 
 .about__content p {
-  font-size: var(--fs-400);
+  font-size: var(--fs-500);
   margin: 2rem 0 2.6rem;
-  max-width: min(80%, 70ch);
+  max-width: min(90%, 60ch);
 }
 
 /*****  media qeuries ******/
@@ -136,8 +137,5 @@
     gap: 2rem;
     padding: 1rem;
     text-align: left;
-  }
-
-  .about__content p {
   }
 }

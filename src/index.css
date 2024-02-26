@@ -283,6 +283,8 @@ a:hover svg {
   cursor: pointer;
   border: 1px solid hsl(var(--clr-white));
   transition: var(--transition);
+
+  font-weight: 600;
 }
 
 .btn:hover {
@@ -292,8 +294,8 @@ a:hover svg {
 }
 
 .btn-primary {
-  background: hsl(var(--clr-light) / 0.75);
-  color: var(--color-bg);
+  background: hsl(var(--clr-light));
+  color: hsl(var(--clr-dark));
   border: 0;
 }
 
