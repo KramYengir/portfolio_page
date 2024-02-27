@@ -4,17 +4,6 @@ header {
   min-height: 90vh;
 }
 
-header .change-logo {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  color: aliceblue;
-  background: none;
-  border: 0;
-  aspect-ratio: 1;
-  padding: 0.5em;
-}
-
 .header__container {
   display: flex;
   justify-content: center;
@@ -26,8 +15,7 @@ header .change-logo {
 }
 
 header .logo {
-  width: 60%;
-  /* margin-bottom: 1rem; */
+  width: 50%;
 }
 
 header .avatar {
@@ -61,15 +49,12 @@ header .avatar {
 
 /* ======== STATEMENT ======== */
 header .statement {
-  position: relative;
-  z-index: 10;
-  max-width: 40ch;
-
   display: grid;
   gap: 1rem;
+  max-width: 40ch;
 
-  line-height: 1.6;
   text-align: left;
+  line-height: 1.6;
 }
 
 header .statement h2 {
@@ -86,12 +71,12 @@ header .statement h2 span {
 @media screen and (max-width: 1024px) {
   .header__container {
     flex-direction: column;
-    padding-top: 6rem;
+    padding-top: 8rem;
     text-align: center;
   }
 
   header .logo {
-    width: 40%;
+    width: 30%;
     margin-inline: auto;
   }
 
@@ -122,11 +107,11 @@ header .statement h2 span {
   .header__container {
     flex-direction: column;
     gap: 1rem;
-    padding-top: 0;
+    padding-top: 4rem;
   }
 
   header .logo {
-    width: 50%;
+    width: 40%;
   }
 
   header .statement {

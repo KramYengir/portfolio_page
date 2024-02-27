@@ -3,7 +3,7 @@ nav {
   display: flex block;
   gap: 1rem;
   width: max-content;
-  padding-inline: 2rem 6rem;
+  padding-inline: 2rem max(2rem, 5vw);
 
   position: fixed;
   z-index: 222;
