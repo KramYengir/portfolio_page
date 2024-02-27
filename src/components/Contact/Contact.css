@@ -1,6 +1,7 @@
 .container.contact__container {
-  display: grid;
-  grid-template-columns: 0.33fr 0.66fr;
+  display: flex;
+  justify-content: space-evenly;
+  /* grid-template-columns: 0.33fr 0.66fr; */
   gap: 12%;
   width: 60%;
 }
@@ -14,10 +15,10 @@
 }
 
 .contact__option {
-  background: var(--color-bg-variant);
+  background: hsl(var(--clr-dark) / 0.5);
   padding: 1.2rem;
 
-  border: 1px solid transparent;
+  border: 1px solid hsl(var(--clr-light));
   border-radius: 1.2rem;
 
   text-align: center;
@@ -27,25 +28,27 @@
   border-color: var(--color-primary-variant);
 }
 
-.contact__option *:nth-child(1) {
-  font-size: 1.5rem;
+.contact__option .icon {
+  font-size: var(--fs-600);
   margin-bottom: 0.5rem;
 }
-.contact__option *:nth-child(2) {
-  font-size: 1.1rem;
+.contact__option h3 {
+  font-size: var(--fs-500);
+  font-weight: 500;
 }
-.contact__option *:nth-child(3) {
+.contact__option p {
   margin-bottom: 0.5rem;
-  color: var(--color-light);
+  color: hsl(var(--clr-light));
 }
-.contact__option *:nth-child(4) {
-  font-size: 0.8rem;
+.contact__option a {
+  font-size: var(--fs-200);
 }
 
 /* ----CONTACT FORM----*/
 
 form {
   display: flex;
+  flex-grow: 0.5;
   flex-direction: column;
   gap: 1.2rem;
 }
@@ -53,15 +56,24 @@ form {
 form input,
 form textarea {
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
 
-  border: 2px solid var(--color-primary-variant);
+  /* border: 2px solid hsl(var(--clr-white)); */
   border-radius: 0.5rem;
 
-  color: var(--color-white);
-  background: transparent;
+  color: hsl(var(--clr-dark));
+  background: hsl(var(--clr-white) / 0.95);
 
   resize: none;
+}
+
+form input:focus-visible,
+form textarea:focus-visible {
+  outline: 4px solid hsl(var(--clr-light));
+}
+
+form *::placeholder {
+  color: hsl(var(--clr-dark) / 0.75);
 }
 
 /*****  media qeuries ******/
@@ -69,8 +81,18 @@ form textarea {
 /* MEDIUM */
 @media screen and (max-width: 1024px) {
   .container.contact__container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 2rem;
+  }
+
+  .contact__options {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  .contact__option {
+    flex: 1;
   }
 }
 /* SMALL */
@@ -78,5 +100,11 @@ form textarea {
   .container.contact__container {
     width: var(--container-sm);
     padding-inline: 2rem;
+  }
+
+  .contact__options {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
   }
 }

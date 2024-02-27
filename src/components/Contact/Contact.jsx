@@ -29,37 +29,42 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact</h2>
+      <p className="sub-heading">Get In Touch</p>
+      <h2 className="heading">Contact</h2>
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <CiMail />
-            <h4>Email</h4>
-            <h5>markrigz@gmail.com</h5>
-            <a href="">Send a message</a>
+            <CiMail className="icon" />
+            <h3>Email</h3>
+            <p>markrigz@gmail.com</p>
+            {/* <button className="btn btn-primary">Send Email</button> */}
           </article>
           <article className="contact__option">
-            <FaFacebookMessenger />
-            <h4>Messenger</h4>
-            <h5>markrigz</h5>
-            <a href="">Send a message</a>
+            <FaFacebookMessenger className="icon" />
+            <h3>Messenger</h3>
+            <p>markrigz</p>
+            {/* <button className="btn btn-primary">Send a message</button> */}
           </article>
           <article className="contact__option">
-            <FaWhatsapp />
-            <h4>WhatsApp</h4>
-            <h5>0123456789</h5>
-            <a href="">Send a message</a>
+            <FaWhatsapp className="icon" />
+            <h3>WhatsApp</h3>
+            <p>0123456789</p>
+            {/* <button className="btn btn-primary">Open WhatsApp</button> */}
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
-            placeholder="Your Full Name"
+            placeholder="Your Full Name..."
             required
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email..."
+            required
+          />
           <textarea
             name="message"
             rows="10"
