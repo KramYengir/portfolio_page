@@ -24,10 +24,10 @@ const Nav = () => {
       // Calculate the change in scroll position since the last scroll event
       const delta = scrollTop - lastScrollTop;
 
-      // Check if the absolute value of delta is greater than 100 pixels
-      // or if the current scroll position is less than 100 pixels (indicating that the user is at the top of the page)
-      if (Math.abs(delta) > 100 || scrollTop < 100) {
-        // Threshold: Trigger effect after scrolling 100 pixels or when at the top
+      // Check if the absolute value of delta is greater than 60 pixels
+      // or if the current scroll position is less than 60 pixels (indicating that the user is at the top of the page)
+      if (Math.abs(delta) > 60 || scrollTop < 60) {
+        // Threshold: Trigger effect after scrolling 60 pixels or when at the top
         // Set the visibility of the navbar based on the scroll direction and position
         setIsNavbarVisible(delta <= 0 || scrollTop < 100);
         // Update the last scroll position
