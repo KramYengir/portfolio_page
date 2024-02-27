@@ -1,21 +1,25 @@
 import "./Portfolio.css";
-import IMG1 from "../../assets/FH.jpg";
-import IMG2 from "../../assets/weather.png";
-import IMG3 from "../../assets/library.png";
+import ferryhillIMG from "../../assets/FH.jpg";
+import weatherAppIMG from "../../assets/weather.png";
+import spaceTourismIMG from "../../assets/space-tourism.png";
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>Some of my Work</h5>
-      <h2>Portfolio</h2>
+      <p className="sub-heading">Some of my Work</p>
+      <h2 className="heading">Portfolio</h2>
       <div className="container portfolio__container">
         <article className="portfolio__item">
           <div className="portfolio__image">
-            <img src={IMG1} alt="image of project" />
+            <img src={ferryhillIMG} alt="image of project" />
           </div>
           <h3>Ferryhill Fish & Chips</h3>
           <div className="portfolio__cta">
-            <a href="" target="blank" className="btn">
+            <a
+              href="https://github.com/KramYengir/restaurant-page"
+              target="blank"
+              className="btn"
+            >
               Github
             </a>
             <a
@@ -23,13 +27,35 @@ const Portfolio = () => {
               target="blank"
               className="btn btn-primary"
             >
-              Live Demo
+              Live Page
             </a>
           </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__image">
-            <img src={IMG2} alt="image of project" />
+            <img src={spaceTourismIMG} alt="image of project" />
+          </div>
+          <h3>Space Tourism</h3>
+          <div className="portfolio__cta">
+            <a
+              href="https://github.com/KramYengir/library-app"
+              target="blank"
+              className="btn"
+            >
+              Github
+            </a>
+            <a
+              href="https://rigneymade-space.netlify.app/"
+              target="blank"
+              className="btn btn-primary"
+            >
+              Live Page
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__image">
+            <img src={weatherAppIMG} alt="image of project" />
           </div>
           <h3>Weather App</h3>
           <div className="portfolio__cta">
@@ -45,29 +71,7 @@ const Portfolio = () => {
               target="blank"
               className="btn btn-primary"
             >
-              Live Demo
-            </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__image">
-            <img src={IMG3} alt="image of project" />
-          </div>
-          <h3>Personal Library App</h3>
-          <div className="portfolio__cta">
-            <a
-              href="https://github.com/KramYengir/library-app"
-              target="blank"
-              className="btn"
-            >
-              Github
-            </a>
-            <a
-              href="https://kramyengir.github.io/library-app/"
-              target="blank"
-              className="btn btn-primary"
-            >
-              Live Demo
+              Live Page
             </a>
           </div>
         </article>
