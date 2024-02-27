@@ -1,4 +1,4 @@
-import "./contact.css";
+import "./Contact.css";
 import { CiMail } from "react-icons/ci";
 import { FaFacebookMessenger, FaWhatsapp } from "react-icons/fa";
 import { useRef } from "react";

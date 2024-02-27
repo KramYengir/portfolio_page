@@ -1,23 +1,14 @@
 import CTA from "./CTA";
-import HeaderSocials from "./headerSocials";
-// import { MdOutlineChangeCircle } from "react-icons/md";
-import "./header.css";
+import HeaderSocials from "./HeaderSocials";
+import "./Header.css";
 import logo from "../../assets/rigneymade-logo-white.svg";
-import me from "../../assets/porto-photo-square.jpg";
-// import { useState } from "react";
 
 const Header = () => {
-  // const [isLogo, setIsLogo] = useState(true);
-
   return (
     <header>
-      {/* <button onClick={() => setIsLogo(!isLogo)} className="change-logo">
-        <MdOutlineChangeCircle />
-      </button> */}
       <div className="container header__container">
         <div className="header__info">
           <img className="logo" src={logo} alt="" />
-          {/* {!isLogo && <img className="avatar" src={me} alt="Website Author" />} */}
           <div className="title">
             <p className="fs-400 text-white">Hello, I am </p>
             <h1 className="uppercase fs-700 ff-sans text-white">Mark Rigney</h1>

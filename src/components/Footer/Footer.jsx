@@ -1,4 +1,4 @@
-import "./footer.css";
+import "./Footer.css";
 import logo from "../../assets/rigneymade-logo.svg";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";

@@ -1,4 +1,4 @@
-import "./testimonials.css";
+import "./Testimonials.css";
 import IMG1 from "../../assets/me.jpg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 // Default theme

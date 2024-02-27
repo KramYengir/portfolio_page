@@ -1,4 +1,4 @@
-import "./portfolio.css";
+import "./Portfolio.css";
 import IMG1 from "../../assets/FH.jpg";
 import IMG2 from "../../assets/weather.png";
 import IMG3 from "../../assets/library.png";

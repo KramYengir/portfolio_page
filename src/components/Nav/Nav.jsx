@@ -1,5 +1,5 @@
-import "./nav.css";
-import SliderButton from "./sliderButton";
+import "./Nav.css";
+import SliderButton from "./SliderButton";
 import { useState, useEffect } from "react";
 import { IoMdHome } from "react-icons/io";
 import { FaListAlt, FaTools } from "react-icons/fa";

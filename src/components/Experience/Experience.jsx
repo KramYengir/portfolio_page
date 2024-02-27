@@ -1,4 +1,4 @@
-import "./experience.css";
+import "./Experience.css";
 import {
   FaHtml5,
   FaCss3Alt,

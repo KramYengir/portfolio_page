@@ -1,5 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
-import "./services.css";
+import "./Services.css";
 
 const Services = () => {
   return (
