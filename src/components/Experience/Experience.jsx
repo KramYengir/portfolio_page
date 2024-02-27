@@ -6,8 +6,9 @@ import {
   FaGitAlt,
   FaReact,
   FaCogs,
+  FaFigma,
 } from "react-icons/fa";
-import { SiSass, SiJest } from "react-icons/si";
+import { SiSass, SiJest, SiAdobephotoshop } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { GiDeerHead } from "react-icons/gi";
 
@@ -59,6 +60,14 @@ const Experience = () => {
             <div className="experience__details">
               <GiDeerHead className="experience__icon" />
               <p>The Odin Project</p>
+            </div>
+            <div className="experience__details">
+              <FaFigma className="experience__icon" />
+              <p>Figma</p>
+            </div>
+            <div className="experience__details">
+              <SiAdobephotoshop className="experience__icon" />
+              <p>Photoshop</p>
             </div>
           </div>
         </div>
