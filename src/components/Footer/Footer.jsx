@@ -50,14 +50,14 @@ const Footer = () => {
         >
           <SiUpwork />
         </a>
-        <a href="https://www.facebook.com/" target="blank">
+        {/* <a href="https://www.facebook.com/" target="blank">
           <FaFacebook />
-        </a>
+        </a> */}
       </div>
 
       <div className="footer__copyright">
         <small>
-          &copy; Rigney<span>Made</span>
+          &copy; Rigney<span>Made</span> 2024
         </small>
       </div>
     </footer>

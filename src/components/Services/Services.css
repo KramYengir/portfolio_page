@@ -56,7 +56,7 @@
 .service .service__list li {
   display: flex;
   gap: 1rem;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1.2rem;
 }
 
 .service__list .service__icon {

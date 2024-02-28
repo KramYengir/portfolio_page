@@ -73,6 +73,7 @@
 
 .about__card h3 {
   font-size: var(--fs-300);
+  color: hsl(var(--clr-light));
 }
 
 .about__card small {
@@ -81,7 +82,7 @@
 }
 
 .about__content p {
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   margin: 2rem 0 2.6rem;
   max-width: min(90%, 60ch);
 }

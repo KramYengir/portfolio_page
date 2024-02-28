@@ -24,6 +24,12 @@ footer ul {
   margin: 0 auto 3rem;
 }
 
+footer ul li a:hover,
+footer ul li a:focus-visible {
+  color: hsl(var(--clr-light));
+  font-weight: 700;
+}
+
 .footer__socials {
   display: flex;
   justify-content: center;

@@ -5,12 +5,6 @@
 
 :root {
   /* OUR GLOBAL VARIABLES*/
-  /* --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6); */
 
   /* colors */
   --clr-dark: 230 35% 7%;
@@ -29,11 +23,6 @@
   --fs-400: 1.125rem;
   --fs-300: 1rem;
   --fs-200: 0.875rem;
-
-  /* font-families */
-  --ff-serif: "Bellefair", serif;
-  --ff-sans-cond: "Barlow Condensed", sans-serif;
-  --ff-sans: "Barlow", sans-serif;
 
   --letter-spacing-l: 4.75px;
   --letter-spacing-m: 2.7px;
@@ -161,7 +150,6 @@ h5 {
 
 section {
   min-height: 90vh;
-  margin-top: 6rem;
   padding-block: 6.5rem;
 }
 

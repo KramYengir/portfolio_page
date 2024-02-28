@@ -47,13 +47,12 @@ const About = () => {
           </div>
           <p className="ff-sans-cond fs-500">
             With a solid background in Software Development and a habit of
-            crafting designs ranging from logos to full-blown websites for
-            friends and family, I had an epiphany: why not turn my passion into
-            a profession? Therefore, RigneyMade was born—a brand I aspire to
-            make synonymous with quality in every project I undertake. Rooted in
-            simplicity, reliability, and trust, RigneyMade represents my
-            commitment to delivering seamless design and functional excellence
-            in collaboration with my clients.
+            crafting logos to full-blown websites for friends and family, I had
+            an epiphany: why not turn my passion into a profession? Therefore,
+            RigneyMade was born—a brand I aspire to make synonymous with quality
+            in every project I undertake. Rooted in simplicity, reliability, and
+            trust, RigneyMade represents my commitment to delivering seamless
+            design and functional excellence in collaboration with my clients.
           </p>
           <a href="#contact" className="btn btn-primary">
             Get In Touch!
