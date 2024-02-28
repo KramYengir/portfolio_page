@@ -12,8 +12,8 @@ const Portfolio = () => {
         <article className="portfolio__item">
           <div className="portfolio__image">
             <img src={ferryhillIMG} alt="image of project" />
+            <h3>Ferryhill Fish & Chips</h3>
           </div>
-          <h3>Ferryhill Fish & Chips</h3>
           <div className="portfolio__cta">
             <a
               href="https://github.com/KramYengir/restaurant-page"
@@ -34,8 +34,8 @@ const Portfolio = () => {
         <article className="portfolio__item">
           <div className="portfolio__image">
             <img src={spaceTourismIMG} alt="image of project" />
+            <h3>Space Tourism</h3>
           </div>
-          <h3>Space Tourism</h3>
           <div className="portfolio__cta">
             <a
               href="https://github.com/KramYengir/library-app"
@@ -56,8 +56,8 @@ const Portfolio = () => {
         <article className="portfolio__item">
           <div className="portfolio__image">
             <img src={weatherAppIMG} alt="image of project" />
+            <h3>Weather App</h3>
           </div>
-          <h3>Weather App</h3>
           <div className="portfolio__cta">
             <a
               href="https://github.com/KramYengir/weather-app"
