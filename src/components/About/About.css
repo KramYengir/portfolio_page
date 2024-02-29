@@ -44,12 +44,12 @@
 
 .about__cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 1rem;
 }
 
 .about__card {
-  flex: 1;
+  /* flex: 1; */
   padding: 1rem 2rem;
   text-align: center;
 
