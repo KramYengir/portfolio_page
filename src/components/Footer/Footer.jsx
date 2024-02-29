@@ -1,6 +1,6 @@
 import "./Footer.css";
 import logo from "../../assets/rigneymade-logo.svg";
-import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaGithub /*FaFacebook*/ } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 
 const Footer = () => {
@@ -57,7 +57,7 @@ const Footer = () => {
 
       <div className="footer__copyright">
         <small>
-          &copy; Rigney<span>Made</span> 2024
+          Rigney<span>Made</span> 2024 &copy;
         </small>
       </div>
     </footer>

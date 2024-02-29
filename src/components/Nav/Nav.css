@@ -97,49 +97,15 @@ nav .icon {
     border-bottom: 0;
   }
 
+  nav a.active .icon svg {
+    fill: hsl(var(--clr-light));
+  }
+
   nav .icon {
     display: grid;
   }
 
   nav .label {
     display: none;
-  }
-
-  /* nav .nav-slider {
-    display: none;
-
-    position: absolute;
-    top: 49%;
-    transform: translateX(-99%);
-
-    padding: 0.75rem 0.5rem;
-    font-size: 1.2rem;
-
-    background: rgba(0, 0, 0, 0.2);
-    color: hsl(var(--clr-white));
-
-    border-radius: 50% 0 0 50%;
-    animation: none;
-  } */
-
-  nav.mobile-hidden .nav-slider {
-    animation: flash 5s infinite;
-  }
-
-  /* nav.mobile-hidden {
-    transform: translateX(100%) translateY(-50%);
-  } */
-}
-
-/* Flashing animation */
-@keyframes flash {
-  0%,
-  50%,
-  100% {
-    color: hsl(var(--clr-white));
-  }
-  25%,
-  75% {
-    color: hsl(var(--clr-light));
   }
 }

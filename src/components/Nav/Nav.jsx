@@ -1,5 +1,4 @@
 import "./Nav.css";
-import SliderButton from "./SliderButton";
 import { useState, useEffect } from "react";
 import { IoMdHome } from "react-icons/io";
 import { FaListAlt, FaTools } from "react-icons/fa";
@@ -8,7 +7,6 @@ import { AiFillMessage } from "react-icons/ai";
 import { IoMdPerson } from "react-icons/io";
 
 const Nav = () => {
-  const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
   const [activeLink, setActiveLink] = useState("#");
   // State to track the last scroll position
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -55,15 +53,15 @@ const Nav = () => {
   //     //console.log(scrollPosition);
 
   //     if (scrollPosition < 450) {
-  //       setIsActive("#");
+  //       setActiveLink("#");
   //     } else if (scrollPosition > 844 && scrollPosition < 1450) {
-  //       setIsActive("#about");
+  //       setActiveLink("#about");
   //     } else if (scrollPosition > 2000 && scrollPosition < 2150) {
-  //       setIsActive("#experience");
+  //       setActiveLink("#experience");
   //     } else if (scrollPosition > 2500 && scrollPosition < 3400) {
-  //       setIsActive("#services");
+  //       setActiveLink("#services");
   //     } else if (scrollPosition > 5800) {
-  //       setIsActive("#contact");
+  //       setActiveLink("#contact");
   //     }
   //   };
 
@@ -76,15 +74,7 @@ const Nav = () => {
   // }, []); // Run the effect only once on mount
 
   return (
-    <nav
-      className={`${isNavbarVisible ? "visible" : "hidden"} ${
-        !isMobileNavVisible ? "mobile-hidden" : ""
-      }`}
-    >
-      <SliderButton
-        isMobileNavVisible={isMobileNavVisible}
-        setIsMobileNavVisible={setIsMobileNavVisible}
-      />
+    <nav className={`${isNavbarVisible ? "visible" : "hidden"}`}>
       <a
         href="#"
         className={activeLink === "#" ? "active" : ""}
