@@ -1,6 +1,5 @@
 import "./Contact.css";
 import { CiMail } from "react-icons/ci";
-import { FaFacebookMessenger, FaWhatsapp } from "react-icons/fa";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -36,21 +35,14 @@ const Contact = () => {
           <article className="contact__option">
             <CiMail className="icon" />
             <h3>Email</h3>
-            <p>markrigz@gmail.com</p>
+            <p>info@rigneymade.com</p>
             {/* <button className="btn btn-primary">Send Email</button> */}
           </article>
-          <article className="contact__option">
-            <FaFacebookMessenger className="icon" />
-            <h3>Messenger</h3>
-            <p>markrigz</p>
-            {/* <button className="btn btn-primary">Send a message</button> */}
-          </article>
-          <article className="contact__option">
+          {/* <article className="contact__option">
             <FaWhatsapp className="icon" />
             <h3>WhatsApp</h3>
-            <p>0123456789</p>
-            {/* <button className="btn btn-primary">Open WhatsApp</button> */}
-          </article>
+            <button>Open</button>
+          </article> */}
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <input

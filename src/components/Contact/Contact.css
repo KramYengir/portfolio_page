@@ -1,7 +1,6 @@
 .container.contact__container {
   display: flex;
   justify-content: space-evenly;
-  /* grid-template-columns: 0.33fr 0.66fr; */
   gap: 12%;
   width: 60%;
 }
@@ -11,6 +10,7 @@
 .contact__options {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.2rem;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .contact__option .icon {
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
   margin-bottom: 0.5rem;
 }
 .contact__option h3 {
@@ -104,7 +104,7 @@ form *::placeholder {
 
   .contact__options {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 1rem;
   }
 }
