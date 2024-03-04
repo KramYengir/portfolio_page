@@ -1,5 +1,5 @@
 import "./About.css";
-import myImg from "../../assets/me.jpg";
+import myImg from "../../assets/me_bw.png";
 import { IoSchoolSharp } from "react-icons/io5";
 import { FaCamera } from "react-icons/fa";
 import { MdLanguage } from "react-icons/md";
