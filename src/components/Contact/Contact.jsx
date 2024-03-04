@@ -4,7 +4,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 // NECESSARY INFO FOR EMAILJS
-const SERVICE_ID = "service_bwawi82";
+const SERVICE_ID = "service_jhyagac";
 const TEMPLATE_ID = "template_6r1d2zd";
 const PUBLIC_KEY = "EUXrEzHA-xr7yeg-1";
 
