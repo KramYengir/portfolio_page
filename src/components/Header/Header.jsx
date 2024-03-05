@@ -29,7 +29,7 @@ const Header = () => {
           <p className="text-white fs-400">
             With a strong foundation in web fundamentals, I specialize in
             crafting bespoke sites that attract customers and empower small
-            businesses. Let&apos;s collaborate to elevate your online presence
+            businesses. Let&apos;s work together to elevate your online presence
             and bring your vision to life.
           </p>
           <CTA></CTA>

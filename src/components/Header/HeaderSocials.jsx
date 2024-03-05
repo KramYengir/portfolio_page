@@ -1,5 +1,4 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiUpwork } from "react-icons/si";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 const HeaderSocials = () => {
   return (
@@ -13,12 +12,12 @@ const HeaderSocials = () => {
       <a href="https://github.com/KramYengir?tab=repositories" target="blank">
         <FaGithub />
       </a>
-      <a
+      {/* <a
         href="https://www.upwork.com/freelancers/~0103b0000a375c78c2"
         target="blank"
       >
-        <SiUpwork />
-      </a>
+        <FaInstagram />
+      </a> */}
     </div>
   );
 };

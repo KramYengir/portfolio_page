@@ -1,6 +1,6 @@
 import "./Footer.css";
 import logo from "../../assets/rigneymade-logo.svg";
-import { FaLinkedin, FaGithub /*FaFacebook*/ } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 
 const Footer = () => {
@@ -44,12 +44,12 @@ const Footer = () => {
         >
           <FaLinkedin />
         </a>
-        <a
+        {/* <a
           href="https://www.upwork.com/freelancers/~0103b0000a375c78c2"
           target="blank"
         >
-          <SiUpwork />
-        </a>
+          <FaInstagram />
+        </a> */}
         {/* <a href="https://www.facebook.com/" target="blank">
           <FaFacebook />
         </a> */}
