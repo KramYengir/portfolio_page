@@ -85,6 +85,22 @@
   border-radius: 0 1rem 1rem 0;
 }
 
+.portfolio__item .info {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+
+  background: hsl(var(--clr-dark) / 0.75);
+  backdrop-filter: blur(3px);
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
 .portfolio__item .portfolio__cta {
   display: flex;
   justify-content: space-evenly;

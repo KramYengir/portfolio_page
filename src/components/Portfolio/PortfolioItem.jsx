@@ -2,7 +2,14 @@ import { useState } from "react";
 import { FaInfoCircle } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 
-export const PortfolioItem = ({ img, imgAlt, title, github, livePage }) => {
+export const PortfolioItem = ({
+  img,
+  imgAlt,
+  title,
+  info,
+  github,
+  livePage,
+}) => {
   const [isInfoShown, setIsInfoShown] = useState(false);
 
   return (
@@ -16,6 +23,11 @@ export const PortfolioItem = ({ img, imgAlt, title, github, livePage }) => {
       <div className="portfolio__image">
         <img src={img} alt={imgAlt} />
         <h3>{title}</h3>
+        {isInfoShown && (
+          <div className="info">
+            <p>{info}</p>
+          </div>
+        )}
       </div>
       <div className="portfolio__cta">
         <a href={github} target="blank" className="btn">

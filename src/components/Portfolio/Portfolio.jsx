@@ -15,6 +15,7 @@ const Portfolio = () => {
           img={ferryhillIMG}
           imgAlt={"Ferryhil Fish and Chips"}
           title={"Ferryhill Fish & Chips"}
+          info={"A website for a fish & chip shop in Manchester"}
           github={"https://github.com/KramYengir/restaurant-page"}
           livePage={"https://ferryhillfishandchips.com/"}
         />
@@ -22,6 +23,7 @@ const Portfolio = () => {
           img={spaceTourismIMG}
           imgAlt={"Space Tourism Page"}
           title={"Space Tourism"}
+          info={"A website template for a space tourism company"}
           github={"https://github.com/KramYengir/FM-space-tourism"}
           livePage={"https://rigneymade-space.netlify.app/"}
         />
@@ -29,6 +31,9 @@ const Portfolio = () => {
           img={weatherAppIMG}
           imgAlt={"Weather App Page"}
           title={"Weather App"}
+          info={
+            "A simple weather app I made early in my learning - needs a overhaul!"
+          }
           github={"https://github.com/KramYengir/weather-app"}
           livePage={"https://kramyengir.github.io/weather-app/"}
         />
