@@ -48,13 +48,13 @@ const Contact = () => {
           <input
             type="text"
             name="name"
-            placeholder="Your Full Name..."
+            placeholder="Your full name..."
             required
           />
           <input
             type="email"
             name="email"
-            placeholder="Your Email..."
+            placeholder="Your email..."
             required
           />
           <textarea
