@@ -44,15 +44,9 @@ const Footer = () => {
         >
           <FaLinkedin />
         </a>
-        {/* <a
-          href="https://www.upwork.com/freelancers/~0103b0000a375c78c2"
-          target="blank"
-        >
+        <a href="https://www.instagram.com/rigneymade88" target="blank">
           <FaInstagram />
-        </a> */}
-        {/* <a href="https://www.facebook.com/" target="blank">
-          <FaFacebook />
-        </a> */}
+        </a>
       </div>
 
       <div className="footer__copyright">

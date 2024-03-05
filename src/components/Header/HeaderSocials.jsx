@@ -12,12 +12,9 @@ const HeaderSocials = () => {
       <a href="https://github.com/KramYengir?tab=repositories" target="blank">
         <FaGithub />
       </a>
-      {/* <a
-        href="https://www.upwork.com/freelancers/~0103b0000a375c78c2"
-        target="blank"
-      >
+      <a href="https://www.instagram.com/rigneymade88" target="blank">
         <FaInstagram />
-      </a> */}
+      </a>
     </div>
   );
 };
