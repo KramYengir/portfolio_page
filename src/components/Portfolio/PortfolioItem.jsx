@@ -7,6 +7,7 @@ export const PortfolioItem = ({
   imgAlt,
   title,
   info,
+  techInfo,
   github,
   livePage,
 }) => {
@@ -26,6 +27,7 @@ export const PortfolioItem = ({
         {isInfoShown && (
           <div className="info">
             <p>{info}</p>
+            <p>{techInfo}</p>
           </div>
         )}
       </div>

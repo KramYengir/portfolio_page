@@ -15,7 +15,10 @@ const Portfolio = () => {
           img={ferryhillIMG}
           imgAlt={"Ferryhil Fish and Chips"}
           title={"Ferryhill Fish & Chips"}
-          info={"A website for a fish & chip shop in Manchester"}
+          info={
+            "For my first client, I developed a multi-page, streamlined website for a popular takeaway establishment in Manchester."
+          }
+          techInfo={"HTML, Sass, JS, Google Maps API"}
           github={"https://github.com/KramYengir/restaurant-page"}
           livePage={"https://ferryhillfishandchips.com/"}
         />
@@ -23,7 +26,10 @@ const Portfolio = () => {
           img={spaceTourismIMG}
           imgAlt={"Space Tourism Page"}
           title={"Space Tourism"}
-          info={"A website template for a space tourism company"}
+          info={
+            "A React template for space tourism, demonstrating proficiency in design implementation and React."
+          }
+          techInfo={"HTML, CSS, React"}
           github={"https://github.com/KramYengir/FM-space-tourism"}
           livePage={"https://rigneymade-space.netlify.app/"}
         />
@@ -32,8 +38,9 @@ const Portfolio = () => {
           imgAlt={"Weather App Page"}
           title={"Weather App"}
           info={
-            "A simple weather app I made early in my learning - needs a overhaul!"
+            "A simple weather app, marking my first project employing Modular design and API calls."
           }
+          techInfo={"HTML, Sass, JS, Webpack, API"}
           github={"https://github.com/KramYengir/weather-app"}
           livePage={"https://kramyengir.github.io/weather-app/"}
         />

@@ -41,6 +41,13 @@
 
   color: hsl(var(--clr-white));
   background-color: transparent;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.portfolio__item .info-button:hover,
+.portfolio__item .info-button:focus-visible {
+  transform: scale(1.1);
 }
 
 .portfolio__item .portfolio__image {
@@ -90,15 +97,20 @@
   inset: 0;
   z-index: 9;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: end;
+  gap: 1.5rem;
 
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 
-  background: hsl(var(--clr-dark) / 0.75);
+  background: hsl(var(--clr-dark) / 0.85);
   backdrop-filter: blur(3px);
   border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.portfolio__item .info p:last-child {
+  font-size: var(--fs-200);
+  font-weight: 600;
 }
 
 .portfolio__item .portfolio__cta {
