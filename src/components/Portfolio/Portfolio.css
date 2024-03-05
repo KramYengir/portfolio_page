@@ -6,6 +6,7 @@
 }
 
 .portfolio__container .portfolio__item {
+  position: relative;
   display: grid;
   gap: 1rem;
   max-width: 300px;
@@ -28,6 +29,18 @@
 .portfolio__container .portfolio__item:hover h3 {
   border-color: hsl(var(--clr-white));
   background: hsl(var(--clr-white));
+}
+
+.portfolio__item .info-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+
+  font-size: var(--fs-600);
+
+  color: hsl(var(--clr-white));
+  background-color: transparent;
 }
 
 .portfolio__item .portfolio__image {
