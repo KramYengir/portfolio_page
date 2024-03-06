@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { FaInfoCircle } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
