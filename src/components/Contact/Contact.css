@@ -72,8 +72,47 @@ form textarea:focus-visible {
   outline: 4px solid hsl(var(--clr-light));
 }
 
+/* ERRORS */
+form input:invalid:focus-visible,
+form textarea:focus-visible:invalid {
+  outline: 4px solid rgb(248, 99, 99);
+}
+form input:valid:focus-visible,
+form textarea:focus-visible:valid {
+  outline: 4px solid hsl(var(--clr-light));
+}
+
 form *::placeholder {
   color: hsl(var(--clr-dark) / 0.75);
+}
+
+/* SUCCESS MESSAGE */
+.success-msg-container {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+
+  display: grid;
+  place-content: center;
+
+  background-color: hsl(var(--clr-dark) / 0.75);
+  backdrop-filter: blur(4px);
+}
+
+.success-msg {
+  text-align: center;
+  padding: 2rem;
+
+  border: 2px solid hsl(var(--clr-light));
+  border-radius: 20px;
+  background-color: hsl(var(--clr-dark) / 0.85);
+}
+
+.success-msg button {
+  margin-top: 2rem;
+  /* padding: 0.5rem 1rem;
+
+  border-radius: 10px; */
 }
 
 /*****  media qeuries ******/

@@ -1,6 +1,6 @@
 import "./Contact.css";
 import { CiMail } from "react-icons/ci";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 // NECESSARY INFO FOR EMAILJS
@@ -9,21 +9,27 @@ const TEMPLATE_ID = "template_6r1d2zd";
 const PUBLIC_KEY = "EUXrEzHA-xr7yeg-1";
 
 const Contact = () => {
+  const [hasSubmitted, setHasSubmitted] = useState(false);
+
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    if (form.current.checkValidity()) {
+      console.log("Form: ", form.current.checkValidity());
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+        (result) => {
+          console.log(result.text);
+          setHasSubmitted(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
-    e.target.reset();
+      e.target.reset();
+    }
   };
 
   return (
@@ -36,13 +42,7 @@ const Contact = () => {
             <CiMail className="icon" />
             <h3>Email</h3>
             <p>info@rigneymade.com</p>
-            {/* <button className="btn btn-primary">Send Email</button> */}
           </article>
-          {/* <article className="contact__option">
-            <FaWhatsapp className="icon" />
-            <h3>WhatsApp</h3>
-            <button>Open</button>
-          </article> */}
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <input
@@ -68,6 +68,21 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      {/* Message Success Confirmation */}
+      {hasSubmitted && (
+        <div className="success-msg-container">
+          <div className="success-msg">
+            <p>Thank You!</p>
+            <p>I will get back to you shortly.</p>
+            <button
+              className="btn btn-primary"
+              onClick={() => setHasSubmitted(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
