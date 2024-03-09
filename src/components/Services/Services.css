@@ -10,6 +10,7 @@
   border: 1px solid hsl(var(--clr-light));
   border-radius: 0.5rem 0.5rem 2rem 2rem;
 
+  min-width: 36ch;
   height: fit-content;
 
   transition: var(--transition);
@@ -18,6 +19,8 @@
 .service:nth-child(odd) {
   background: hsl(var(--clr-dark) / 0.25);
   border: 1px solid hsl(var(--clr-white));
+
+  min-width: 32ch;
 }
 
 .service:hover {
@@ -89,7 +92,7 @@
   }
 
   .service {
-    min-width: 75%;
+    min-width: 80%;
   }
 
   .service:nth-child(2) {
