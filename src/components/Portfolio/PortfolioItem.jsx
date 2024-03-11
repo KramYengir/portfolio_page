@@ -19,6 +19,7 @@ export const PortfolioItem = ({
       <button
         className="info-button"
         onClick={() => setIsInfoShown(!isInfoShown)}
+        aria-label="more info"
       >
         {isInfoShown ? <IoCloseSharp /> : <FaInfoCircle />}
       </button>
