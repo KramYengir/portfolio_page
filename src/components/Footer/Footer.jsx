@@ -5,8 +5,8 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className="footer__logo">
-        <img src={logo} alt="" />
+      <a href="#" className="footer__logo" aria-label="logo">
+        <img src={logo} alt="logo" />
       </a>
 
       <ul>
@@ -44,7 +44,7 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/mark-rigney-640992b6/"
           target="blank"
-          aria-label="linkedin profile"
+          aria-label="linked profile"
         >
           <FaLinkedin />
         </a>
