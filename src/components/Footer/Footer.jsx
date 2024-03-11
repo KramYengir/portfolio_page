@@ -44,7 +44,7 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/mark-rigney-640992b6/"
           target="blank"
-          aria-label="linked profile"
+          aria-label="linkedin profile"
         >
           <FaLinkedin />
         </a>
