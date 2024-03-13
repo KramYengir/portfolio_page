@@ -16,25 +16,13 @@ header {
 
 header .logo {
   width: 50%;
-}
-
-header .avatar {
-  max-width: 10rem;
-  border: 0.2rem solid hsl(var(--clr-white));
-  border-radius: 10%;
-  margin-right: auto;
+  opacity: 100;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .header__info {
   display: grid;
   gap: 1rem;
-}
-
-/* ======== CTA ======== */
-.cta {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1.2rem;
 }
 
 /* ======== SOCIALS ======== */
@@ -65,6 +53,13 @@ header .statement h2 {
 header .statement h2 span {
   color: hsl(var(--clr-white));
   font-weight: 700;
+}
+
+/* ======== CTA ======== */
+.cta {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.2rem;
 }
 
 /* MEDIUM */
