@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo from "../../assets/rigneymade-logo.svg";
+import logo from "../../assets/rigneymade-logo-cropped-black.svg";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {

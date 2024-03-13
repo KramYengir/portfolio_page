@@ -1,7 +1,7 @@
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
 import "./Header.css";
-import logo from "../../assets/rigneymade-logo-white.svg";
+import logo from "../../assets/rigneymade-logo-cropped-white.svg";
 
 const Header = () => {
   return (
