@@ -18,10 +18,6 @@ nav {
   transition: transform 0.75s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-nav .nav-slider {
-  display: none;
-}
-
 nav a {
   display: flex;
 
