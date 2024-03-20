@@ -69,14 +69,10 @@ nav .icon {
 /* SMALL */
 @media screen and (max-width: 760px) {
   nav {
-    /* display: grid;
-    flex-direction: column; */
     justify-content: center;
     top: initial;
     bottom: 2rem;
     left: 50%;
-    /* top: 50%;
-    right: 1rem;*/
     transform: translateX(-50%);
 
     background: rgba(0, 0, 0, 0.2);
