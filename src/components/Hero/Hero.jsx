@@ -28,13 +28,15 @@ const Hero = () => {
         <div className="statement">
           <h2 className="uppercase text-accent fs-700 letter-spacing-3">
             <span>I create </span>Websites tailored for <br />
-            <span>Your Success</span>
+            <span>Your Growth</span>
           </h2>
           <p className="text-white fs-400">
-            With a strong foundation in web fundamentals, I specialize in
-            crafting bespoke sites that attract customers and empower small
-            businesses. Let&apos;s work together to elevate your online presence
-            and bring your vision to life.
+            As an aspiring Web Developer with a strong foundation in web
+            fundamentals, I&apos;m here to assist new and small businesses in
+            making their mark online. I specialize in crafting bespoke websites
+            tailored to your goals and budget. Let&apos;s team up and create
+            something special that puts your business in the spotlight and gets
+            people&apos;s attention!
           </p>
           <CTA></CTA>
         </div>

@@ -57,11 +57,7 @@
 
   border: 1px solid transparent;
   border-radius: 1rem;
-}
 
-.about__card:hover {
-  background: hsl(var(--clr-white) / 0.05);
-  border-color: hsl(var(--clr-light));
   cursor: default;
 }
 
@@ -102,7 +98,7 @@
   }
 
   .about__cards {
-    display: flex;
+    width: 100%;
     justify-content: center;
     gap: 1rem;
   }

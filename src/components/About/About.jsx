@@ -25,34 +25,35 @@ const About = () => {
                 <small>B.Eng Computer Engineering</small>
               </div>
             </div>
-            <div className="about__card">
+            {/* <div className="about__card">
               <FaCamera className="about__icon" aria-hidden={true} />
               <div>
                 <h3>Hobby</h3>
-                <small>Photography</small>
+                <small>Reading</small>
                 <br />
 
                 <small>Running</small>
               </div>
-            </div>
+            </div> */}
             <div className="about__card">
               <MdLanguage className="about__icon" aria-hidden={true} />
               <div>
                 <h3>Other Experience</h3>
                 <small>Certified TEFL Teacher</small>
                 <br />
-                <small>Figma - Photoshop</small>
+                <small>Photography</small>
               </div>
             </div>
           </div>
           <p className="ff-sans-cond fs-500">
-            With a strong background in Software Development and a knack for
-            creating media and websites for friends and family, I had an
-            epiphany: why not turn my passion into a profession? Thus,
-            RigneyMade was born — a brand I aim to make synonymous with quality
-            in every project. Rooted in simplicity, reliability and trust,
-            RigneyMade reflects my dedication to delivering seamless design and
-            functional excellence in client collaborations.
+            Having always been the go-to guy for family and friends seeking
+            digital assistance, I had an idea: &apos;Why not turn this passion
+            into a profession?&apos; And so, RigneyMade was born – a name I
+            aspire to see as a mark of quality at the bottom of effective web
+            pages. With a personal touch and a no-nonsense approach, I&apos;m
+            here to lend a helping hand to new and small businesses, guiding
+            them every step of the way in establishing their online presence and
+            attracting new customers.
           </p>
           <a href="#contact" className="btn btn-primary">
             Get In Touch!

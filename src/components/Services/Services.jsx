@@ -8,7 +8,7 @@ const Services = () => {
       <h2 className="heading">Services</h2>
       <div className="container services__container">
         {/* ------ DESIGN ----- */}
-        <article className="service">
+        <div className="service">
           <div className="service__head">
             <h3>Design</h3>
           </div>
@@ -30,10 +30,10 @@ const Services = () => {
               <p>Social Media Graphics</p>
             </li>
           </ul>
-        </article>
+        </div>
 
         {/* ------ WEB DEV ----- */}
-        <article className="service">
+        <div className="service">
           <div className="service__head">
             <h3>Full Web Page</h3>
           </div>
@@ -59,10 +59,10 @@ const Services = () => {
               <p>Ongoing Maintenance & Support</p>
             </li>
           </ul>
-        </article>
+        </div>
 
         {/* ------ ANALYSIS ----- */}
-        <article className="service">
+        <div className="service">
           <div className="service__head">
             <h3>Analysis</h3>
           </div>
@@ -84,7 +84,7 @@ const Services = () => {
               <p>Content Review</p>
             </li>
           </ul>
-        </article>
+        </div>
       </div>
     </section>
   );
