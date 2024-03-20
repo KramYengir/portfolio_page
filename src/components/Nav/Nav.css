@@ -10,7 +10,7 @@ nav {
   backdrop-filter: blur(5px);
   border-radius: 2rem 0 0 2rem;
 
-  transition: transform 0.75s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 nav ul {
@@ -45,7 +45,12 @@ nav a:hover {
 nav a.active {
   /* background: var(--color-primary-variant); */
   color: hsl(var(--clr-light));
-  /* border-bottom: 2px solid hsl(var(--clr-light)); */
+  border-bottom: 2px solid hsl(var(--clr-light));
+}
+
+nav a:focus-visible {
+  color: hsl(var(--clr-light));
+  border-bottom: 1px solid hsl(var(--clr-white));
 }
 
 nav .icon {

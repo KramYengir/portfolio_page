@@ -162,7 +162,8 @@ a svg {
   fill: hsl(var(--clr-white));
 }
 
-a:hover svg {
+a:hover svg,
+a:focus-visible svg {
   fill: hsl(var(--clr-light));
 }
 
@@ -262,6 +263,8 @@ a:hover svg {
   color: hsl(var(--clr-light) / 0.75);
 }
 
+/** GlOBAL ELEMENTS **/
+
 .btn {
   width: max-content;
   display: inline-block;
@@ -275,7 +278,8 @@ a:hover svg {
   font-weight: 600;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
   background: hsl(var(--clr-white));
   color: hsl(var(--clr-dark));
   border-color: transparent;
