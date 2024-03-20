@@ -44,66 +44,80 @@ const Nav = () => {
 
   return (
     <nav className={`${isNavbarVisible ? "visible" : "hidden"}`}>
-      <a
-        href="#"
-        className={activeLink === "#" ? "active" : ""}
-        onClick={() => setActiveLink("#")}
-      >
-        <span className="icon">
-          <IoMdHome />
-        </span>
-        <span className="label">Home</span>
-      </a>
-      <a
-        href="#about"
-        className={activeLink === "#about" ? "active" : ""}
-        onClick={() => setActiveLink("#about")}
-      >
-        <span className="icon">
-          <IoMdPerson />
-        </span>
-        <span className="label">About</span>
-      </a>
-      <a
-        href="#experience"
-        className={activeLink === "#experience" ? "active" : ""}
-        onClick={() => setActiveLink("#experience")}
-      >
-        <span className="icon">
-          <FaListAlt />
-        </span>
-        <span className="label">Experience</span>
-      </a>
-      <a
-        href="#services"
-        className={activeLink === "#services" ? "active" : ""}
-        onClick={() => setActiveLink("#services")}
-      >
-        <span className="icon">
-          <FaTools />
-        </span>
-        <span className="label">Services</span>
-      </a>
-      <a
-        href="#portfolio"
-        className={activeLink === "#portfolio" ? "active" : ""}
-        onClick={() => setActiveLink("#portfolio")}
-      >
-        <span className="icon">
-          <FaFolderOpen />
-        </span>
-        <span className="label">Portfolio</span>
-      </a>
-      <a
-        href="#contact"
-        className={activeLink === "#contact" ? "active" : ""}
-        onClick={() => setActiveLink("#contact")}
-      >
-        <span className="icon">
-          <AiFillMessage />
-        </span>
-        <span className="label">Contact</span>
-      </a>
+      <ul>
+        <li>
+          <a
+            href="#"
+            className={activeLink === "#" ? "active" : ""}
+            onClick={() => setActiveLink("#")}
+          >
+            <span className="icon">
+              <IoMdHome />
+            </span>
+            <span className="label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#about"
+            className={activeLink === "#about" ? "active" : ""}
+            onClick={() => setActiveLink("#about")}
+          >
+            <span className="icon">
+              <IoMdPerson />
+            </span>
+            <span className="label">About</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#experience"
+            className={activeLink === "#experience" ? "active" : ""}
+            onClick={() => setActiveLink("#experience")}
+          >
+            <span className="icon">
+              <FaListAlt />
+            </span>
+            <span className="label">Experience</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#services"
+            className={activeLink === "#services" ? "active" : ""}
+            onClick={() => setActiveLink("#services")}
+          >
+            <span className="icon">
+              <FaTools />
+            </span>
+            <span className="label">Services</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#portfolio"
+            className={activeLink === "#portfolio" ? "active" : ""}
+            onClick={() => setActiveLink("#portfolio")}
+          >
+            <span className="icon">
+              <FaFolderOpen />
+            </span>
+            <span className="label">Portfolio</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#contact"
+            className={activeLink === "#contact" ? "active" : ""}
+            onClick={() => setActiveLink("#contact")}
+          >
+            <span className="icon">
+              <AiFillMessage />
+            </span>
+            <span className="label">Contact</span>
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };
