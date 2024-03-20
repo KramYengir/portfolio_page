@@ -1,8 +1,8 @@
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
-const HeaderSocials = () => {
+const HeroSocials = () => {
   return (
-    <div className="header__socials">
+    <div className="hero__socials">
       <a
         href="https://www.linkedin.com/in/mark-rigney-640992b6/"
         target="blank"
@@ -28,4 +28,4 @@ const HeaderSocials = () => {
   );
 };
 
-export default HeaderSocials;
+export default HeroSocials;

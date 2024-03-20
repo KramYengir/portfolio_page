@@ -1,4 +1,4 @@
-import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
 import Experience from "./components/Experience/Experience";
 import Services from "./components/Services/Services";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Nav></Nav>
-      <Header></Header>
+      <Hero></Hero>
       <About></About>
       <Experience></Experience>
       <Services></Services>

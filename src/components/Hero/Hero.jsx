@@ -1,13 +1,13 @@
 import CTA from "./CTA";
-import HeaderSocials from "./HeaderSocials";
-import "./Header.css";
+import HeroSocials from "./HeroSocials";
+import "./Hero.css";
 import logo from "../../assets/rigneymade-logo-cropped-white.svg";
 
-const Header = () => {
+const Hero = () => {
   return (
-    <header>
-      <div className="container header__container">
-        <div className="header__info">
+    <section className="hero-section">
+      <div className="container hero__container">
+        <div className="hero__info">
           <img className="logo" src={logo} alt="" />
           <div className="title">
             <p className="fs-400 text-white">Hello, I am </p>
@@ -19,7 +19,7 @@ const Header = () => {
               Frontend Developer
             </p>
           </div>
-          <HeaderSocials />
+          <HeroSocials />
         </div>
         <div className="statement">
           <h2 className="uppercase text-accent fs-700 letter-spacing-3">
@@ -35,8 +35,8 @@ const Header = () => {
           <CTA></CTA>
         </div>
       </div>
-    </header>
+    </section>
   );
 };
 
-export default Header;
+export default Hero;
