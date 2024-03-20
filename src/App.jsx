@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
+      <div className="fade-effect"></div>
       <Nav></Nav>
       <Hero></Hero>
       <About></About>

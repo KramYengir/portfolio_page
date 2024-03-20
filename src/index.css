@@ -73,6 +73,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  z-index: 10;
 }
 
 h1,
@@ -165,6 +166,26 @@ a svg {
 a:hover svg,
 a:focus-visible svg {
   fill: hsl(var(--clr-light));
+}
+
+a,
+button,
+input,
+textarea {
+  z-index: 10;
+}
+
+/** FADE EFFECT **/
+.fade-effect {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    hsl(var(--clr-dark) / 0.05) 0%,
+    hsl(var(--clr-light) / 0.15) 40%,
+    hsl(var(--clr-light) / 0.35) 100%
+  );
 }
 
 /* ------------------- */
@@ -320,7 +341,7 @@ img {
   }
 
   section {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
   }
 }
 /* SMALL */
