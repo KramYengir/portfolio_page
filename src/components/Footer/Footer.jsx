@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <a href="#" className="footer__logo" aria-label="logo">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo n the style of handwritten R M" />
       </a>
 
       <ul>

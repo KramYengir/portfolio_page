@@ -14,19 +14,19 @@ const Services = () => {
           </div>
           <ul className="service__list">
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Wireframing & Prototyping</p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Brand Identity </p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>UI/UX Style Guide</p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Social Media Graphics</p>
             </li>
           </ul>
@@ -39,23 +39,23 @@ const Services = () => {
           </div>
           <ul className="service__list">
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Bespoke Website Design</p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Responsive Development</p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Performance Optimization</p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>High Accessibility Standard</p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Ongoing Maintenance & Support</p>
             </li>
           </ul>
@@ -68,19 +68,19 @@ const Services = () => {
           </div>
           <ul className="service__list">
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Basic SEO Assessment</p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Usability Evaluation</p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Performance Analysis</p>
             </li>
             <li>
-              <FaCheckCircle className={"service__icon"} />
+              <FaCheckCircle className={"service__icon"} aria-hidden={true} />
               <p>Content Review</p>
             </li>
           </ul>

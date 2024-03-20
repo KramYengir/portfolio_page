@@ -22,51 +22,57 @@ const Experience = () => {
           <h3>Frontend Development</h3>
           <div className="experience__content">
             <div className="experience__details">
-              <FaHtml5 className="experience__icon" />
+              <FaHtml5 className="experience__icon" aria-hidden={true} />
               <p>HTML</p>
             </div>
             <div className="experience__details">
-              <FaCss3Alt className="experience__icon" />
+              <FaCss3Alt className="experience__icon" aria-hidden={true} />
               <p>CSS</p>
             </div>
             <div className="experience__details">
-              <SiSass className="experience__icon" />
+              <SiSass className="experience__icon" aria-hidden={true} />
               <p>Sass</p>
             </div>
             <div className="experience__details">
-              <IoLogoJavascript className="experience__icon" />
+              <IoLogoJavascript
+                className="experience__icon"
+                aria-hidden={true}
+              />
               <p>Javascript</p>
             </div>
             <div className="experience__details">
-              <FaReact className="experience__icon" />
+              <FaReact className="experience__icon" aria-hidden={true} />
               <p>React</p>
             </div>
             <div className="experience__details">
-              <FaNodeJs className="experience__icon" />
+              <FaNodeJs className="experience__icon" aria-hidden={true} />
               <p>Node.js</p>
             </div>
             <div className="experience__details">
-              <FaCogs className="experience__icon" />
+              <FaCogs className="experience__icon" aria-hidden={true} />
               <p>API (REST)</p>
             </div>
             <div className="experience__details">
-              <FaGitAlt className="experience__icon" />
+              <FaGitAlt className="experience__icon" aria-hidden={true} />
               <p>GIT</p>
             </div>
             <div className="experience__details">
-              <SiJest className="experience__icon" />
+              <SiJest className="experience__icon" aria-hidden={true} />
               <p>Jest Testing</p>
             </div>
             <div className="experience__details">
-              <GiDeerHead className="experience__icon" />
+              <GiDeerHead className="experience__icon" aria-hidden={true} />
               <p>The Odin Project</p>
             </div>
             <div className="experience__details">
-              <FaFigma className="experience__icon" />
+              <FaFigma className="experience__icon" aria-hidden={true} />
               <p>Figma</p>
             </div>
             <div className="experience__details">
-              <SiAdobephotoshop className="experience__icon" />
+              <SiAdobephotoshop
+                className="experience__icon"
+                aria-hidden={true}
+              />
               <p>Photoshop</p>
             </div>
           </div>

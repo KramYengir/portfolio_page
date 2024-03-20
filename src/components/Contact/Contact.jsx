@@ -39,7 +39,7 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <CiMail className="icon" />
+            <CiMail className="icon" aria-hidden={true} />
             <h3>Email</h3>
             <p>info@rigneymade.com</p>
           </article>

@@ -12,12 +12,12 @@ const About = () => {
 
       <div className="container about__container">
         <div className="about__me">
-          <img src={myImg} alt="Image of page creator" />
+          <img src={myImg} alt="page creator" />
         </div>
         <article className="about__content">
           <div className="about__cards">
             <div className="about__card">
-              <IoSchoolSharp className="about__icon" />
+              <IoSchoolSharp className="about__icon" aria-hidden={true} />
               <div>
                 <h3>Education</h3>
                 <small>B.Sc (Hons) Software Development</small>
@@ -26,7 +26,7 @@ const About = () => {
               </div>
             </div>
             <div className="about__card">
-              <FaCamera className="about__icon" />
+              <FaCamera className="about__icon" aria-hidden={true} />
               <div>
                 <h3>Hobby</h3>
                 <small>Photography</small>
@@ -36,7 +36,7 @@ const About = () => {
               </div>
             </div>
             <div className="about__card">
-              <MdLanguage className="about__icon" />
+              <MdLanguage className="about__icon" aria-hidden={true} />
               <div>
                 <h3>Other Experience</h3>
                 <small>Certified TEFL Teacher</small>
