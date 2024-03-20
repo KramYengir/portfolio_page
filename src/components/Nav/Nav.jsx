@@ -83,18 +83,6 @@ const Nav = () => {
         </li>
         <li>
           <a
-            href="#services"
-            className={activeLink === "#services" ? "active" : ""}
-            onClick={() => setActiveLink("#services")}
-          >
-            <span className="icon">
-              <FaTools />
-            </span>
-            <span className="label">Services</span>
-          </a>
-        </li>
-        <li>
-          <a
             href="#portfolio"
             className={activeLink === "#portfolio" ? "active" : ""}
             onClick={() => setActiveLink("#portfolio")}
@@ -103,6 +91,18 @@ const Nav = () => {
               <FaFolderOpen />
             </span>
             <span className="label">Portfolio</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#services"
+            className={activeLink === "#services" ? "active" : ""}
+            onClick={() => setActiveLink("#services")}
+          >
+            <span className="icon">
+              <FaTools />
+            </span>
+            <span className="label">Services</span>
           </a>
         </li>
         <li>

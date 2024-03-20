@@ -15,8 +15,8 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Experience></Experience>
-      <Services></Services>
       <Portfolio></Portfolio>
+      <Services></Services>
       <Testimonials></Testimonials>
       <Contact></Contact>
       <Footer></Footer>
