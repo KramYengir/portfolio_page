@@ -15,7 +15,7 @@ import { GiDeerHead } from "react-icons/gi";
 const Experience = () => {
   return (
     <section id="experience">
-      <p className="sub-heading">My Skills</p>
+      <p className="sub-heading">What I&apos;ve Learned</p>
       <h2 className="heading">My Experience</h2>
       <div className="container experience__container">
         <div className="experience__frontend">
