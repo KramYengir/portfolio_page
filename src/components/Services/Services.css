@@ -10,7 +10,6 @@
   border: 1px solid hsl(var(--clr-light));
   border-radius: 0.5rem 0.5rem 2rem 2rem;
 
-  min-width: 36ch;
   height: fit-content;
 
   transition: var(--transition);
@@ -91,11 +90,11 @@
     align-items: center;
   }
 
-  .service {
+  .service:nth-child(odd) {
     min-width: 80%;
   }
 
-  .service:nth-child(2) {
+  /* .service:nth-child(2) {
     min-width: 85%;
-  }
+  } */
 }

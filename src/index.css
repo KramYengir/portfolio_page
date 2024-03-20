@@ -182,8 +182,8 @@ textarea {
   z-index: 1;
   background: linear-gradient(
     180deg,
-    hsl(var(--clr-dark) / 0.05) 0%,
-    hsl(var(--clr-light) / 0.15) 40%,
+    hsl(var(--clr-dark) / 0.01) 0%,
+    hsl(var(--clr-light) / 0.1) 40%,
     hsl(var(--clr-light) / 0.35) 100%
   );
 }
