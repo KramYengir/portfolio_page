@@ -180,6 +180,13 @@ textarea {
   position: fixed;
   inset: 0;
   z-index: 1;
+}
+
+.fade-effect::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
     180deg,
     hsl(var(--clr-dark) / 0.01) 0%,
