@@ -182,12 +182,12 @@ textarea {
   left: 0; */
   width: 100%;
   height: 100vh;
-  z-index: 1;
+  z-index: -1;
   background: linear-gradient(
     180deg,
     hsl(var(--clr-dark) / 0.9) 0%,
     hsl(var(--clr-dark) / 0.6) 20%,
-    hsl(var(--clr-dark) / 0.2) 40%,
+    hsl(var(--clr-dark) / 0.3) 40%,
     hsl(var(--clr-light) / 0.1) 75%,
     hsl(var(--clr-light) / 0.25) 100%
   );
