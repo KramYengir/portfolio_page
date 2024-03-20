@@ -1,8 +1,7 @@
 import "./About.css";
 import myImg from "../../assets/me_bw.png";
 import { IoSchoolSharp } from "react-icons/io5";
-import { FaCamera } from "react-icons/fa";
-import { MdLanguage } from "react-icons/md";
+import { FaRegLightbulb } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -36,7 +35,7 @@ const About = () => {
               </div>
             </div> */}
             <div className="about__card">
-              <MdLanguage className="about__icon" aria-hidden={true} />
+              <FaRegLightbulb className="about__icon" aria-hidden={true} />
               <div>
                 <h3>Other Experience</h3>
                 <small>Certified TEFL Teacher</small>
