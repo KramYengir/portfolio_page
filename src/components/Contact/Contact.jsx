@@ -45,19 +45,31 @@ const Contact = () => {
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
+          <label htmlFor="name" className="sr-only">
+            Full Name
+          </label>
           <input
+            id="name"
             type="text"
             name="name"
             placeholder="Your full name..."
             required
           />
+          <label htmlFor="email" className="sr-only">
+            Email
+          </label>
           <input
+            id="email"
             type="email"
             name="email"
             placeholder="Your email..."
             required
           />
+          <label htmlFor="message" className="sr-only">
+            Enter message
+          </label>
           <textarea
+            id="message"
             name="message"
             rows="10"
             placeholder="Your message..."
