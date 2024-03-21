@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*Oxygen Font*/
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 /* ------------------- */
 /* Custom Properties   */
 /* ------------------- */
@@ -121,6 +123,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  /* font-family: "Oxygen", sans-serif; */
   line-height: 1.6;
   font-weight: 400;
   font-size: var(--fs-400);
@@ -301,7 +304,7 @@ textarea {
   border: 1px solid hsl(var(--clr-white));
   transition: var(--transition);
 
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .btn:hover,
