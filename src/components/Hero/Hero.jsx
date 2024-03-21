@@ -31,12 +31,10 @@ const Hero = () => {
             <span>Your Growth</span>
           </h2>
           <p className="text-white fs-400">
-            As an aspiring Web Developer with a strong foundation in web
-            fundamentals, I&apos;m here to assist new and small businesses in
-            making their mark online. I specialize in crafting bespoke websites
-            tailored to your goals and budget. Let&apos;s team up and create
-            something special that puts your business in the spotlight and gets
-            people&apos;s attention!
+            Here to assist new and small businesses in making their mark online,
+            I specialize in crafting bespoke websites tailored to your goals and
+            budget. Let&apos;s team up and create something special that takes
+            your business to the next level!
           </p>
           <CTA></CTA>
         </div>
