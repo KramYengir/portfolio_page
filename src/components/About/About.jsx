@@ -24,16 +24,6 @@ const About = () => {
                 <small>B.Eng Computer Engineering</small>
               </div>
             </div>
-            {/* <div className="about__card">
-              <FaCamera className="about__icon" aria-hidden={true} />
-              <div>
-                <h3>Hobby</h3>
-                <small>Reading</small>
-                <br />
-
-                <small>Running</small>
-              </div>
-            </div> */}
             <div className="about__card">
               <FaRegLightbulb className="about__icon" aria-hidden={true} />
               <div>
@@ -48,7 +38,7 @@ const About = () => {
             Having always been the go-to guy for family and friends seeking
             digital assistance, I had an idea: &apos;Why not turn this passion
             into a profession?&apos; And so, RigneyMade was born – a name I
-            aspire to see as a mark of quality at the bottom of effective web
+            aspire to see as a mark of quality at the bottom of impactful web
             pages. With a personal touch and a no-nonsense approach, I&apos;m
             here to lend a helping hand to new and small businesses, guiding
             them every step of the way in establishing their online presence and
