@@ -15,15 +15,15 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <FaCheckCircle className={"service__icon"} aria-hidden={true} />
-              <p>Wireframing & Prototyping</p>
+              <p>Prototyping via Figma</p>
             </li>
             <li>
               <FaCheckCircle className={"service__icon"} aria-hidden={true} />
-              <p>Brand Identity </p>
+              <p>Logo Design</p>
             </li>
             <li>
               <FaCheckCircle className={"service__icon"} aria-hidden={true} />
-              <p>UI/UX Style Guide</p>
+              <p>UI Style Guide</p>
             </li>
             <li>
               <FaCheckCircle className={"service__icon"} aria-hidden={true} />
