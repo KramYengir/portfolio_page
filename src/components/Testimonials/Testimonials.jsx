@@ -1,5 +1,4 @@
 import "./Testimonials.css";
-import IMG1 from "../../assets/me.jpg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 // Default theme
 import "@splidejs/react-splide/css/skyblue";
@@ -7,21 +6,21 @@ import "@splidejs/react-splide/css/skyblue";
 const testimonialData = [
   {
     id: 1,
-    image: IMG1,
+    // image: IMG1,
     name: "Jim Blonkbly",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate earum! sit amet consectetur adipisicing elit. Eos, cupiditate earum!",
   },
   {
     id: 2,
-    image: IMG1,
+    // image: IMG1,
     name: "Blim Flamko",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate earum! sit amet consectetur adipisicing elit. Eos, cupiditate earum!",
   },
   {
     id: 3,
-    image: IMG1,
+    // image: IMG1,
     name: "Eric Shneckle",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate earum! sit amet consectetur adipisicing elit. Eos, cupiditate earum!",

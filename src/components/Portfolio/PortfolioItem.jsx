@@ -15,6 +15,7 @@ export const PortfolioItem = ({
 
   return (
     <article className="portfolio__item">
+      <h3 className="fs-600 uppercase letter-spacing-3">{title}</h3>
       <div className="video-container">
         <video
           src={mp4}
@@ -31,9 +32,12 @@ export const PortfolioItem = ({
           className="thumbnail"
         />
       </div>
-      <h3 className="fs-600 letter-spacing-3">{title}</h3>
       <p>{info}</p>
-      <p>{techInfo}</p>
+      <div className="tech-info">
+        {techInfo.map((tech, id) => (
+          <small key={id}>{tech}</small>
+        ))}
+      </div>
       <div className="portfolio__cta">
         <a
           href={github}
