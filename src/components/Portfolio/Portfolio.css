@@ -1,23 +1,24 @@
 .portfolio__container {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 2rem;
+  /* overflow-x: scroll; */
 }
 
 .portfolio__container .portfolio__item {
-  position: relative;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
-  max-width: 300px;
-  min-width: 200px;
+  max-width: 500px;
 
-  padding-inline: 0;
-  padding-bottom: 1rem;
+  padding: 1rem;
 
   background: hsl(var(--clr-dark) / 0.5);
   border-radius: 1.5rem;
-  border: 2px solid hsl(var(--clr-light) / 0.75);
+  /* border: 2px solid hsl(var(--clr-light) / 0.75); */
+
   transition: var(--transition);
 }
 
@@ -26,91 +27,23 @@
   background: transparent;
 }
 
-.portfolio__container .portfolio__item:hover h3 {
-  border-color: hsl(var(--clr-white));
-  background: hsl(var(--clr-white));
-}
-
-.portfolio__item .info-button {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 15;
-
-  font-size: var(--fs-600);
-
-  color: hsl(var(--clr-white));
-  background-color: transparent;
-
-  transition: transform 0.2s ease-in-out;
-}
-
-.portfolio__item .info-button:hover,
-.portfolio__item .info-button:focus-visible {
-  transform: scale(1.1);
-}
-
-.portfolio__item .portfolio__image {
-  position: relative;
-}
-
-.portfolio__item .portfolio__image img {
-  position: relative;
-  aspect-ratio: 4/3;
-  border-radius: 1.5rem 1.5rem 0 0;
+.portfolio__item .video-container {
+  display: flex;
+  max-width: 100%;
   overflow: hidden;
+  background-color: red;
 }
 
-.portfolio__item .portfolio__image:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-
-  background: hsl(var(--clr-dark) / 0.25);
-  backdrop-filter: blur(3px);
-
-  border-radius: 1.5rem 1.5rem 0 0;
-  overflow: hidden;
+.portfolio__item video {
+  max-width: 100%;
 }
 
-.portfolio__item .portfolio__image h3 {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  right: 20%;
-  z-index: 15;
-
-  font-family: var(--ff-sans);
-  padding: 0.5rem 1rem;
-
-  color: hsl(var(--clr-dark));
-  background: hsl(var(--clr-white));
-
-  /* border-block: 2px solid transparent;
-  border-right: 2px solid transparent; */
-  border-radius: 0 1rem 1rem 0;
+.portfolio__item img {
+  width: 100%;
 }
 
-.portfolio__item .info {
-  position: absolute;
-  inset: 0;
-  z-index: 15;
-
-  display: grid;
-  place-content: end;
-  gap: 1.5rem;
-
-  padding: 1.5rem 1rem;
-
-  background: hsl(var(--clr-dark) / 0.85);
-  backdrop-filter: blur(3px);
-  border-radius: 1.5rem 1.5rem 0 0;
-}
-
-.portfolio__item .info p:last-child {
-  font-size: var(--fs-200);
-  font-weight: 600;
+.portfolio__item p {
+  max-width: 90%;
 }
 
 .portfolio__item .portfolio__cta {

@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { FaInfoCircle } from "react-icons/fa";
-import { IoCloseSharp } from "react-icons/io5";
 
 export const PortfolioItem = ({
+  mp4,
   img,
   imgAlt,
   title,
@@ -12,32 +11,44 @@ export const PortfolioItem = ({
   github,
   livePage,
 }) => {
-  const [isInfoShown, setIsInfoShown] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
     <article className="portfolio__item">
-      <button
-        className="info-button"
-        onClick={() => setIsInfoShown(!isInfoShown)}
-        aria-label="more info"
-      >
-        {isInfoShown ? <IoCloseSharp /> : <FaInfoCircle />}
-      </button>
-      <div className="portfolio__image">
-        <img src={img} alt={imgAlt} />
-        <h3>{title}</h3>
-        {isInfoShown && (
-          <div className="info">
-            <p>{info}</p>
-            <p>{techInfo}</p>
-          </div>
-        )}
+      <div className="video-container">
+        <video
+          src={mp4}
+          autoPlay
+          loop
+          muted
+          onLoadedData={() => setVideoLoaded(true)}
+          style={{ display: videoLoaded ? "block" : "none" }}
+        ></video>
+        <img
+          src={img}
+          alt={imgAlt}
+          style={{ display: !videoLoaded ? "block" : "none" }}
+          className="thumbnail"
+        />
       </div>
+      <h3 className="fs-600 letter-spacing-3">{title}</h3>
+      <p>{info}</p>
+      <p>{techInfo}</p>
       <div className="portfolio__cta">
-        <a href={github} target="blank" className="btn">
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn"
+        >
           Github
         </a>
-        <a href={livePage} target="blank" className="btn btn-primary">
+        <a
+          href={livePage}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary"
+        >
           Live Page
         </a>
       </div>

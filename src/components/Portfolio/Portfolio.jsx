@@ -1,6 +1,9 @@
 import "./Portfolio.css";
 import { PortfolioItem } from "./PortfolioItem";
 
+import ferryhillMP4 from "../../assets/FH_video.mp4";
+import spaceTourismMP4 from "../../assets/space_video.mp4";
+import weatherMP4 from "../../assets/weather_video.mp4";
 import ferryhillIMG from "../../assets/FH.jpg";
 import weatherAppIMG from "../../assets/weather.png";
 import spaceTourismIMG from "../../assets/space-tourism.png";
@@ -12,6 +15,7 @@ const Portfolio = () => {
       <h2 className="heading">Portfolio</h2>
       <div className="container portfolio__container">
         <PortfolioItem
+          mp4={ferryhillMP4}
           img={ferryhillIMG}
           imgAlt={"Ferryhil Fish and Chips"}
           title={"Ferryhill Fish & Chips"}
@@ -23,6 +27,7 @@ const Portfolio = () => {
           livePage={"https://ferryhillfishandchips.com/"}
         />
         <PortfolioItem
+          mp4={spaceTourismMP4}
           img={spaceTourismIMG}
           imgAlt={"Space Tourism Page"}
           title={"Space Tourism"}
@@ -34,6 +39,7 @@ const Portfolio = () => {
           livePage={"https://rigneymade-space.netlify.app/"}
         />
         <PortfolioItem
+          mp4={weatherMP4}
           img={weatherAppIMG}
           imgAlt={"Weather App Page"}
           title={"Weather App"}
