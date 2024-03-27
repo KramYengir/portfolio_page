@@ -83,11 +83,11 @@
 /** MOBILEDEVICES **/
 @media (max-width: 40em) {
   .portfolio__container .portfolio__item {
-    max-width: 95%;
+    max-width: 90%;
     text-align: center;
   }
 
-  .portfolio__item p:first-of-type {
-    max-width: 100%;
+  .portfolio__item p {
+    max-width: 80%;
   }
 }
