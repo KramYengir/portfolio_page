@@ -49,7 +49,7 @@ const Footer = () => {
           <FaLinkedin />
         </a>
         <a
-          href="https://www.instagram.com/rigneymade88"
+          href="https://www.instagram.com/rigneymade.webdev"
           target="blank"
           aria-label="instagram profile"
         >
