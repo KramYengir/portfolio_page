@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { Suspense, lazy } from "react";
+const PortfolioVideo = lazy(() => import("./PortfolioVideo.jsx"));
 
 export const PortfolioItem = ({
   mp4,
@@ -11,26 +12,17 @@ export const PortfolioItem = ({
   github,
   livePage,
 }) => {
-  const [videoLoaded, setVideoLoaded] = useState(false);
+  // const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
     <article className="portfolio__item">
       <h3 className="fs-600 uppercase letter-spacing-3">{title}</h3>
       <div className="video-container">
-        <video
-          src={mp4}
-          autoPlay
-          loop
-          muted
-          onLoadedData={() => setVideoLoaded(true)}
-          style={{ display: videoLoaded ? "block" : "none" }}
-        ></video>
-        <img
-          src={img}
-          alt={imgAlt}
-          style={{ display: !videoLoaded ? "block" : "none" }}
-          className="thumbnail"
-        />
+        <Suspense
+          fallback={<img src={img} alt={imgAlt} className="thumbnail" />}
+        >
+          <PortfolioVideo src={mp4} poster={img}></PortfolioVideo>
+        </Suspense>
       </div>
       <p>{info}</p>
       <div className="tech-info">
