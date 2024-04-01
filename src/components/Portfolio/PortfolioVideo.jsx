@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const PortfolioVideo = ({ src, poster }) => {
   return (
     <video
