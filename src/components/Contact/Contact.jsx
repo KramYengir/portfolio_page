@@ -38,11 +38,13 @@ const Contact = () => {
       <h2 className="heading">Contact</h2>
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <CiMail className="icon" aria-hidden={true} />
-            <h3>Email</h3>
-            <p>info@rigneymade.com</p>
-          </article>
+          <div className="contact__option">
+            <a href="mailto:info@rigneymade.com">
+              <CiMail className="icon" aria-hidden={true} />
+              <h3>Email</h3>
+              <p>info@rigneymade.com</p>
+            </a>
+          </div>
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <label htmlFor="name" className="sr-only">
