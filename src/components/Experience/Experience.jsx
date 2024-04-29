@@ -8,7 +8,12 @@ import {
   FaCogs,
   FaFigma,
 } from "react-icons/fa";
-import { SiSass, SiJest, SiAdobephotoshop } from "react-icons/si";
+import {
+  SiSass,
+  SiJest,
+  SiAdobephotoshop,
+  SiTailwindcss,
+} from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { GiDeerHead } from "react-icons/gi";
 
@@ -32,6 +37,10 @@ const Experience = () => {
             <div className="experience__details">
               <SiSass className="experience__icon" aria-hidden={true} />
               <p>Sass</p>
+            </div>
+            <div className="experience__details">
+              <SiTailwindcss className="experience__icon" aria-hidden={true} />
+              <p>Tailwind CSS</p>
             </div>
             <div className="experience__details">
               <IoLogoJavascript
