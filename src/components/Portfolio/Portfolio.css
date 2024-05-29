@@ -15,7 +15,7 @@
   align-items: center;
   text-align: center;
   gap: 1rem;
-  max-width: 500px;
+  max-width: 450px;
   min-width: 300px;
 
   padding: 1rem 0;
@@ -63,7 +63,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-block: auto 2rem;
+  padding-inline: 0.8rem;
+  margin-block: auto 1rem;
 }
 
 .portfolio__item .tech-info small {
