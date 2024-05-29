@@ -1,10 +1,14 @@
 .experience__container {
-  display: grid;
-  align-items: basline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
   cursor: default;
 }
 
-.experience__frontend {
+.experience__section {
+  flex: 1;
+  min-width: min(95vw, 500px);
   text-align: center;
   padding: 2rem;
   background: hsl(var(--clr-bg-accent) / 0.25);
@@ -12,18 +16,18 @@
   transition: var(--transition);
 }
 
-.experience__frontend h3 {
+.experience__section h3 {
   color: hsl(var(--clr-white));
 }
 
-.experience__frontend:hover {
+.experience__section:hover {
   background: transparent;
   outline: 1px solid hsl(var(--clr-white));
 }
 
 .experience__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   row-gap: 2rem;
   margin: 2rem auto;
 }
@@ -66,7 +70,7 @@
     font-size: 1.5rem;
   }
 
-  .experience__frontend {
+  .experience__section {
     /* background: transparent; */
     outline: 1px solid hsl(var(--clr-light));
     padding: 2rem 1rem;

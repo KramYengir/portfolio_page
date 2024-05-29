@@ -1,4 +1,5 @@
 import "./Experience.css";
+import { TbBrandNextjs } from "react-icons/tb";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -13,6 +14,8 @@ import {
   SiJest,
   SiAdobephotoshop,
   SiTailwindcss,
+  SiTypescript,
+  SiSanity,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { GiDeerHead } from "react-icons/gi";
@@ -23,7 +26,7 @@ const Experience = () => {
       <p className="sub-heading">What I&apos;ve Learned</p>
       <h2 className="heading">My Experience</h2>
       <div className="container experience__container">
-        <div className="experience__frontend">
+        <div className="experience__section">
           <h3>Frontend Development</h3>
           <div className="experience__content">
             <div className="experience__details">
@@ -50,21 +53,14 @@ const Experience = () => {
               <p>Javascript</p>
             </div>
             <div className="experience__details">
+              <SiTypescript className="experience__icon" aria-hidden={true} />
+              <p>Typescript</p>
+            </div>
+            <div className="experience__details">
               <FaReact className="experience__icon" aria-hidden={true} />
               <p>React</p>
             </div>
-            <div className="experience__details">
-              <FaNodeJs className="experience__icon" aria-hidden={true} />
-              <p>Node.js</p>
-            </div>
-            <div className="experience__details">
-              <FaCogs className="experience__icon" aria-hidden={true} />
-              <p>API (REST)</p>
-            </div>
-            <div className="experience__details">
-              <FaGitAlt className="experience__icon" aria-hidden={true} />
-              <p>GIT</p>
-            </div>
+
             <div className="experience__details">
               <SiJest className="experience__icon" aria-hidden={true} />
               <p>Jest Testing</p>
@@ -83,6 +79,31 @@ const Experience = () => {
                 aria-hidden={true}
               />
               <p>Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <div className="experience__section">
+          <h3>Backend Development</h3>
+          <div className="experience__content">
+            <div className="experience__details">
+              <FaNodeJs className="experience__icon" aria-hidden={true} />
+              <p>Node.js</p>
+            </div>
+            <div className="experience__details">
+              <TbBrandNextjs className="experience__icon" aria-hidden={true} />
+              <p>Next.js</p>
+            </div>
+            <div className="experience__details">
+              <SiSanity className="experience__icon" aria-hidden={true} />
+              <p>Sanity.io</p>
+            </div>
+            <div className="experience__details">
+              <FaCogs className="experience__icon" aria-hidden={true} />
+              <p>API (REST)</p>
+            </div>
+            <div className="experience__details">
+              <FaGitAlt className="experience__icon" aria-hidden={true} />
+              <p>GIT</p>
             </div>
           </div>
         </div>
