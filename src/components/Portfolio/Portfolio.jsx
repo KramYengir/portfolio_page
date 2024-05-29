@@ -34,7 +34,7 @@ const Portfolio = () => {
             "OMDb API",
           ]}
           github={"https://github.com/KramYengir/rigney-reviews"}
-          livePage={"https://ferryhillfishandchips.com/"}
+          livePage={"https://rreviews.netlify.app/"}
         />
         <PortfolioItem
           mp4={ferryhillMP4}
@@ -46,7 +46,7 @@ const Portfolio = () => {
           }
           techInfo={["HTML", "Sass", "JS", "Google Maps API"]}
           github={"https://github.com/KramYengir/restaurant-page"}
-          livePage={"https://rreviews.netlify.app/"}
+          livePage={"https://ferryhillfishandchips.com/"}
         />
         <PortfolioItem
           mp4={spaceTourismMP4}
