@@ -1,5 +1,6 @@
 import "./Experience.css";
 import { TbBrandNextjs } from "react-icons/tb";
+import { BsTextareaResize } from "react-icons/bs";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -44,6 +45,13 @@ const Experience = () => {
             <div className="experience__details">
               <SiTailwindcss className="experience__icon" aria-hidden={true} />
               <p>Tailwind CSS</p>
+            </div>
+            <div className="experience__details">
+              <BsTextareaResize
+                className="experience__icon"
+                aria-hidden={true}
+              />
+              <p>shadcn/ui</p>
             </div>
             <div className="experience__details">
               <IoLogoJavascript
