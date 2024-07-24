@@ -9,6 +9,7 @@ import {
   FaReact,
   FaCogs,
   FaFigma,
+  FaImages,
 } from "react-icons/fa";
 import {
   SiSass,
@@ -82,11 +83,8 @@ const Experience = () => {
               <p>Figma</p>
             </div>
             <div className="experience__details">
-              <SiAdobephotoshop
-                className="experience__icon"
-                aria-hidden={true}
-              />
-              <p>Photoshop</p>
+              <FaImages className="experience__icon" aria-hidden={true} />
+              <p>GIMP</p>
             </div>
           </div>
         </div>
