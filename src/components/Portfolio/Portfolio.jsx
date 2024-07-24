@@ -3,10 +3,8 @@ import { PortfolioItem } from "./PortfolioItem";
 
 import ferryhillMP4 from "../../assets/FH_video.mp4";
 import spaceTourismMP4 from "../../assets/space_video.mp4";
-import weatherMP4 from "../../assets/weather_video.mp4";
-import reviewsMP4 from "../../assets/rreviews-video.mp4";
+import reviewsMP4 from "../../assets/rreviews_video.mp4";
 import ferryhillIMG from "../../assets/FH.png";
-import weatherAppIMG from "../../assets/wedder.png";
 import spaceTourismIMG from "../../assets/space.png";
 import reviewsIMG from "../../assets/rreviews-image.png";
 
@@ -59,18 +57,6 @@ const Portfolio = () => {
           techInfo={["HTML", "CSS", "React"]}
           github={"https://github.com/KramYengir/FM-space-tourism"}
           livePage={"https://rigneymade-space.netlify.app/"}
-        />
-        <PortfolioItem
-          mp4={weatherMP4}
-          img={weatherAppIMG}
-          imgAlt={"Weather App Page"}
-          title={"Weather App"}
-          info={
-            "A simple weather app, marking my first project employing Modular design and API calls."
-          }
-          techInfo={["HTML", "Sass", "JS", "Webpack", "API"]}
-          github={"https://github.com/KramYengir/weather-app"}
-          livePage={"https://kramyengir.github.io/weather-app/"}
         />
       </div>
     </section>

@@ -14,7 +14,6 @@ import {
 import {
   SiSass,
   SiJest,
-  SiAdobephotoshop,
   SiTailwindcss,
   SiTypescript,
   SiSanity,
